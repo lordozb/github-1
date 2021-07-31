@@ -5,11 +5,15 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "dantestpara"
+			"defaultValue": "workspacedeploy"
 		},
 		"AzureBlobStorage1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
 		"AzureDataLakeStorage1116_accountKey": {
 			"type": "secureString",
@@ -79,10 +83,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ltianscusworkspace-WorkspaceDefaultSqlServer'"
 		},
-		"testpewsdeploy-WorkspaceDefaultSqlServer_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'testpewsdeploy-WorkspaceDefaultSqlServer'"
-		},
 		"workspacedeploy-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'workspacedeploy-WorkspaceDefaultSqlServer'"
@@ -92,7 +92,10 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
+			"defaultValue": "https://hozhaotestgen2.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_accountKey": {
+			"type": "string"
 		},
 		"AzureDataLakeStorage1116_properties_typeProperties_url": {
 			"type": "string",
@@ -296,13 +299,6 @@
 			"type": "string",
 			"defaultValue": "https://ltianscusgen2.dfs.core.windows.net"
 		},
-		"testpewsdeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
-			"type": "string"
-		},
-		"testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
-		},
 		"workspacedeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
 			"type": "string"
 		},
@@ -354,28 +350,16 @@
 		"sql script 1_properties_content_currentConnection_databaseName": {
 			"type": "string"
 		},
-		"sql script 1_Copy1_properties_content_currentConnection_poolName": {
-			"type": "string"
-		},
-		"sql script 1_Copy1_properties_content_currentConnection_databaseName": {
-			"type": "string"
-		},
 		"SQL script 2_properties_content_currentConnection_poolName": {
 			"type": "string"
 		},
 		"SQL script 2_properties_content_currentConnection_databaseName": {
 			"type": "string"
 		},
-		"SQL script 3_properties_content_currentConnection_poolName": {
+		"sql script 1_Copy1_properties_content_currentConnection_poolName": {
 			"type": "string"
 		},
-		"SQL script 3_properties_content_currentConnection_databaseName": {
-			"type": "string"
-		},
-		"Sql script1_properties_content_currentConnection_poolName": {
-			"type": "string"
-		},
-		"Sql script1_properties_content_currentConnection_databaseName": {
+		"sql script 1_Copy1_properties_content_currentConnection_databaseName": {
 			"type": "string"
 		},
 		"Charting in Synapse Notebook2_Copy1_Copy1_properties_bigDataPool_referenceName": {
@@ -545,10 +529,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:04:56Z"
 			},
@@ -582,10 +562,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:04:57Z"
 			},
@@ -614,10 +590,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:04:56Z"
 			},
@@ -652,10 +624,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:03:37Z"
 			},
@@ -690,10 +658,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:03:34Z"
 			},
@@ -728,10 +692,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:03:36Z"
 			},
@@ -766,10 +726,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"annotations": [],
 				"lastPublishTime": "2021-07-22T17:03:35Z"
 			},
@@ -808,10 +764,6 @@
 						}
 					}
 				],
-				"policy": {
-					"elapsedTimeMetric": {},
-					"cancelAfter": {}
-				},
 				"folder": {
 					"name": "New folder"
 				},
@@ -852,7 +804,11 @@
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
+					"accountKey": {
+						"type": "SecureString",
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_accountKey')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -1472,52 +1428,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/testpewsdeploy-WorkspaceDefaultSqlServer')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"parameters": {
-					"DBName": {
-						"type": "String"
-					}
-				},
-				"annotations": [],
-				"type": "AzureSqlDW",
-				"typeProperties": {
-					"connectionString": {
-						"type": "SecureString",
-						"value": "[parameters('testpewsdeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
-					}
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/testpewsdeploy-WorkspaceDefaultStorage')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/workspacedeploy-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
@@ -1658,15 +1568,9 @@
 							"timeToLive": 0
 						}
 					}
-				},
-				"managedVirtualNetwork": {
-					"type": "ManagedVirtualNetworkReference",
-					"referenceName": "default"
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/IntegrationRuntime1')]",
@@ -1755,33 +1659,13 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest' \nend ",
+					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest'\nend",
 					"metadata": {
 						"language": "sql"
 					},
 					"currentConnection": {
 						"poolName": "[parameters('sql script 1_properties_content_currentConnection_poolName')]",
 						"databaseName": "[parameters('sql script 1_properties_content_currentConnection_databaseName')]"
-					},
-					"resultLimit": 5000
-				},
-				"type": "SqlQuery"
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/sql script 1_Copy1')]",
-			"type": "Microsoft.Synapse/workspaces/sqlscripts",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"content": {
-					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest'\nend   ",
-					"metadata": {
-						"language": "sql"
-					},
-					"currentConnection": {
-						"poolName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_poolName')]",
-						"databaseName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_databaseName')]"
 					},
 					"resultLimit": 5000
 				},
@@ -1810,38 +1694,18 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/SQL script 3')]",
+			"name": "[concat(parameters('workspaceName'), '/sql script 1_Copy1')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "USE AdventureWorks2012;\nGO\nSELECT *\nFROM Production.Product\nORDER BY Name ASC;\n-- Alternate way.\nUSE AdventureWorks2012;\nGO\nSELECT p.*\nFROM Production.Product AS p\nORDER BY Name ASC;\nGO",
+					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest'\nend",
 					"metadata": {
 						"language": "sql"
 					},
 					"currentConnection": {
-						"poolName": "[parameters('SQL script 3_properties_content_currentConnection_poolName')]",
-						"databaseName": "[parameters('SQL script 3_properties_content_currentConnection_databaseName')]"
-					},
-					"resultLimit": 5000
-				},
-				"type": "SqlQuery"
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/Sql script1')]",
-			"type": "Microsoft.Synapse/workspaces/sqlscripts",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"content": {
-					"query": "SQL *\nFROM spt_fallback_db  ",
-					"metadata": {
-						"language": "sql"
-					},
-					"currentConnection": {
-						"poolName": "[parameters('Sql script1_properties_content_currentConnection_poolName')]",
-						"databaseName": "[parameters('Sql script1_properties_content_currentConnection_databaseName')]"
+						"poolName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_databaseName')]"
 					},
 					"resultLimit": 5000
 				},
@@ -2390,6 +2254,9 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
 					"kernelspec": {
 						"name": "synapse_pyspark",
 						"display_name": "Synapse PySpark"
@@ -2400,10 +2267,17 @@
 					"a365ComputeOptions": {
 						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
 						"name": "origin",
+						"type": "Spark",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
 						"auth": {
 							"type": "AAD",
 							"authResource": "https://dev.azuresynapse.net"
-						}
+						},
+						"sparkVersion": "2.4",
+						"nodeCount": 10,
+						"cores": 8,
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -2414,20 +2288,22 @@
 							"\n",
 							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"## Matplotlib\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"# Line charts\n",
-							"  \n",
+							"\n",
 							"import matplotlib.pyplot as plt\n",
 							" \n",
 							"x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
@@ -2437,12 +2313,13 @@
 							"plt.plot(x, y2, label=\"line H\")\n",
 							"plt.plot()\n",
 							"\n",
-							"plt.xlabel(\"x axis\")  \n",
+							"plt.xlabel(\"x axis\")\n",
 							"plt.ylabel(\"y axis\")\n",
 							"plt.title(\"Line Graph Example\")\n",
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					},
@@ -2472,6 +2349,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2499,6 +2377,7 @@
 							"plt.title(\"Cumulative Histogram\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2525,6 +2404,7 @@
 							"plt.show()\n",
 							""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2550,6 +2430,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2573,6 +2454,7 @@
 							"plt.title('Pie Chart Example')\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2593,6 +2475,7 @@
 							"plt.title(\"Fills and Alpha Example\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2638,6 +2521,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2672,6 +2556,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2703,6 +2588,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2724,6 +2610,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2732,7 +2619,8 @@
 						"source": [
 							"## Seaborn\n",
 							"Seaborn is a library layered on top of Matplotlib that you can use."
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2752,6 +2640,7 @@
 							"sns.regplot(x, y)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2774,6 +2663,7 @@
 							"sns.heatmap(data)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2783,7 +2673,8 @@
 							"## Bokeh\n",
 							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2810,6 +2701,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2845,6 +2737,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -2897,32 +2790,30 @@
 						"nodeCount": 10,
 						"cores": 8,
 						"memory": 56,
-						"automaticScaleJobs": false
-					},
-					"sessionKeepAliveTimeout": 30
+						"extraHeader": null
+					}
 				},
 				"cells": [
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"# Charting in Synapse Notebook\n",
 							"\n",
 							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"## Matplotlib\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Line charts\n",
 							"\n",
@@ -2939,15 +2830,14 @@
 							"plt.ylabel(\"y axis\")\n",
 							"plt.title(\"Line Graph Example\")\n",
 							"plt.legend()\n",
-							"plt.show()\n",
-							""
+							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Bar chart\n",
 							"\n",
@@ -2972,12 +2862,12 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Histogram\n",
 							"\n",
@@ -3000,12 +2890,12 @@
 							"plt.title(\"Cumulative Histogram\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Scatter chart\n",
 							"\n",
@@ -3027,12 +2917,12 @@
 							"plt.show()\n",
 							""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Stack plots\n",
 							"\n",
@@ -3053,12 +2943,12 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Pie charts\n",
 							"\n",
@@ -3077,12 +2967,12 @@
 							"plt.title('Pie Chart Example')\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# fill_between and alpha\n",
 							"\n",
@@ -3098,12 +2988,12 @@
 							"plt.title(\"Fills and Alpha Example\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Subplotting using Subplot2grid\n",
 							"\n",
@@ -3144,12 +3034,12 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# 3D Scatter Plots\n",
 							"\n",
@@ -3179,12 +3069,12 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# 3D Bar Plots\n",
 							"\n",
@@ -3211,12 +3101,12 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Wireframe Plots\n",
 							"\n",
@@ -3233,20 +3123,20 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"## Seaborn\n",
 							"Seaborn is a library layered on top of Matplotlib that you can use."
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Scatterplot with a nice regression line fit to it, all with just one call to Seaborn's regplot.\n",
 							"\n",
@@ -3263,12 +3153,12 @@
 							"sns.regplot(x, y)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Seanborn heatmap\n",
 							"\n",
@@ -3286,21 +3176,21 @@
 							"sns.heatmap(data)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"## Bokeh\n",
 							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"import numpy as np\n",
 							"from bokeh.plotting import figure, show\n",
@@ -3324,12 +3214,12 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"# Plotting glyphs over a map using bokeh.\n",
 							"\n",
@@ -3360,6 +3250,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -6625,6 +6516,9 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
 					"kernelspec": {
 						"name": "synapse_pyspark",
 						"display_name": "python"
@@ -6637,50 +6531,7 @@
 					{
 						"cell_type": "code",
 						"source": [
-							"hello world"
-						],
-						"attachments": null,
-						"outputs": [],
-						"execution_count": null
-					}
-				]
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/Notebook 1_Copy1')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"sessionProperties": {
-					"driverMemory": "28g",
-					"driverCores": 4,
-					"executorMemory": "28g",
-					"executorCores": 4,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"kernelspec": {
-						"name": "synapse_pyspark",
-						"display_name": "python"
-					},
-					"language_info": {
-						"name": "python"
-					}
-				},
-				"cells": [
-					{
-						"cell_type": "code",
-						"source": [
-							"hello world"
+							""
 						],
 						"attachments": null,
 						"outputs": [],
@@ -9299,7 +9150,7 @@
 				"annotations": []
 			},
 			"dependsOn": [],
-			"location": "westus"
+			"location": "southcentralus"
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/pool2')]",
@@ -9312,44 +9163,33 @@
 				"annotations": []
 			},
 			"dependsOn": [],
-			"location": "westus"
+			"location": "southcentralus"
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/default')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sql--testpewsdeploy')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"name": "[concat(parameters('workspaceName'), '/SampleSQL')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
-				"privateLinkResourceId": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/testpewsdeploy",
-				"groupId": "sql",
-				"fqdns": [
-					"testpewsdeploy.6a389ab6-cdf0-41a2-9514-e76d76b45065.sql.azuresynapse.net"
-				]
+				"collation": "SQL_Latin1_General_CP1_CI_AS",
+				"maxSizeBytes": 263882790666240,
+				"restorePointInTime": "0001-01-01T00:00:00",
+				"annotations": []
 			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
+			"dependsOn": [],
+			"location": "southcentralus"
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sqlOnDemand--testpewsdeploy')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"name": "[concat(parameters('workspaceName'), '/test')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
-				"privateLinkResourceId": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/testpewsdeploy",
-				"groupId": "sqlOnDemand",
-				"fqdns": [
-					"testpewsdeploy-ondemand.6a389ab6-cdf0-41a2-9514-e76d76b45065.sql.azuresynapse.net"
-				]
+				"collation": "SQL_Latin1_General_CP1_CI_AS",
+				"maxSizeBytes": 263882790666240,
+				"restorePointInTime": "0001-01-01T00:00:00",
+				"annotations": []
 			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
+			"dependsOn": [],
+			"location": "southcentralus"
 		}
 	]
 }
