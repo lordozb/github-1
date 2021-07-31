@@ -3,9 +3,12 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "dantestpara"
+			"value": "workspacedeploy"
 		},
 		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
 		"AzureDataLakeStorage1116_accountKey": {
@@ -59,9 +62,6 @@
 		"ltianscusworkspace-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"testpewsdeploy-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
 		"workspacedeploy-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
@@ -69,7 +69,10 @@
 			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+			"value": "https://hozhaotestgen2.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_accountKey": {
+			"value": ""
 		},
 		"AzureDataLakeStorage1116_properties_typeProperties_url": {
 			"value": "https://storagegen2qingtest.dfs.core.windows.net"
@@ -237,12 +240,6 @@
 		"ltianscusworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://ltianscusgen2.dfs.core.windows.net"
 		},
-		"testpewsdeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
-			"value": ""
-		},
-		"testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
-		},
 		"workspacedeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
 			"value": ""
 		},
@@ -287,28 +284,16 @@
 		"sql script 1_properties_content_currentConnection_databaseName": {
 			"value": ""
 		},
-		"sql script 1_Copy1_properties_content_currentConnection_poolName": {
-			"value": ""
-		},
-		"sql script 1_Copy1_properties_content_currentConnection_databaseName": {
-			"value": ""
-		},
 		"SQL script 2_properties_content_currentConnection_poolName": {
 			"value": ""
 		},
 		"SQL script 2_properties_content_currentConnection_databaseName": {
 			"value": ""
 		},
-		"SQL script 3_properties_content_currentConnection_poolName": {
+		"sql script 1_Copy1_properties_content_currentConnection_poolName": {
 			"value": ""
 		},
-		"SQL script 3_properties_content_currentConnection_databaseName": {
-			"value": ""
-		},
-		"Sql script1_properties_content_currentConnection_poolName": {
-			"value": ""
-		},
-		"Sql script1_properties_content_currentConnection_databaseName": {
+		"sql script 1_Copy1_properties_content_currentConnection_databaseName": {
 			"value": ""
 		},
 		"Charting in Synapse Notebook2_Copy1_Copy1_properties_bigDataPool_referenceName": {
