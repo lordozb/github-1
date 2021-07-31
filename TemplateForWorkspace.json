@@ -11,14 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
-		"AzureBlobStorage1124_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1124'"
-		},
-		"AzureDataLakeStorage1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
-		},
 		"AzureDataLakeStorage1116_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1116'"
@@ -27,33 +19,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1117'"
 		},
-		"BlobStorage112501_connectionString": {
+		"AzureDataLakeStorage1119_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage112501'"
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1119'"
 		},
-		"BlobStorage112502_connectionString": {
+		"AzureMySql1_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage112502'"
+			"metadata": "Secure string for 'connectionString' of 'AzureMySql1'"
 		},
-		"BlobStorage1211_connectionString": {
+		"AzureSqlDatabase1_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage1211'"
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
-		"BlobStorage1214_connectionString": {
+		"AzureSynapseAnalytics1_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage1214'"
-		},
-		"BlobStorage1217_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage1217'"
-		},
-		"BlobStorage121701_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage121701'"
-		},
-		"BlobStorage121702_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorage121702'"
+			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics1'"
 		},
 		"Gen2112501_accountKey": {
 			"type": "secureString",
@@ -67,9 +47,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'servicePrincipalKey' of 'Kusto112501'"
 		},
-		"MongoDbApi1125_connectionString": {
+		"dancicdtest-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'MongoDbApi1125'"
+			"metadata": "Secure string for 'connectionString' of 'dancicdtest-WorkspaceDefaultSqlServer'"
+		},
+		"dangitbugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'dangitbugbash-WorkspaceDefaultSqlServer'"
+		},
+		"dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'dansynapsebugbash-WorkspaceDefaultSqlServer'"
 		},
 		"dantestpara-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
@@ -91,21 +79,69 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ltianscusworkspace-WorkspaceDefaultSqlServer'"
 		},
+		"testpewsdeploy-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'testpewsdeploy-WorkspaceDefaultSqlServer'"
+		},
+		"workspacedeploy-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'workspacedeploy-WorkspaceDefaultSqlServer'"
+		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://hozhaotestgen2.dfs.core.windows.net"
+			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
 		},
 		"AzureDataLakeStorage1116_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
+		"AzureDataLakeStorage1116_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
 		"AzureDataLakeStorage1117_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
+		"AzureDataLakeStorage1117_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
+		"AzureDataLakeStorage1118_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestorage.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1118_properties_typeProperties_accountKey": {
+			"type": "object",
+			"defaultValue": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "name1"
+			}
+		},
+		"AzureDataLakeStorage1119_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://accessibilitytest.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1119_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://a365-e2e.vault.azure.net/"
+		},
+		"AzureMySql1_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"AzureSynapseAnalytics1_properties_typeProperties_connectionString": {
+			"type": "string"
 		},
 		"Gen1112501_properties_typeProperties_dataLakeStoreUri": {
 			"type": "string",
@@ -127,9 +163,19 @@
 			"type": "string",
 			"defaultValue": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
+		"Gen2112501_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
 		"Gen21217_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storagegen2qingtest.dfs.core.windows.net"
+		},
+		"Gen21217_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
+		"Kusto112501_properties_typeProperties_endpoint": {
+			"type": "string",
+			"defaultValue": "https://kustodemo.westus2.kusto.windows.net"
 		},
 		"Kusto112501_properties_typeProperties_tenant": {
 			"type": "string",
@@ -139,13 +185,44 @@
 			"type": "string",
 			"defaultValue": "ac3a0e33-1db1-48ba-9b19-24ce0330ff5c"
 		},
+		"Kusto112501_properties_typeProperties_servicePrincipalKey": {
+			"type": "string"
+		},
 		"Kusto112501_properties_typeProperties_database": {
 			"type": "string",
 			"defaultValue": "cdndemo"
 		},
-		"MongoDbApi1125_properties_typeProperties_database": {
+		"PowerBIWorkspace1_properties_typeProperties_workspaceID": {
 			"type": "string",
-			"defaultValue": "yuwwang-mongo-db1"
+			"defaultValue": "28a0e6b5-f83b-47c9-aa9f-eaab6b8a2bf9"
+		},
+		"PowerBIWorkspace1_properties_typeProperties_tenantID": {
+			"type": "string",
+			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"dancicdtest-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"dancicdtest-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://accessibilitytest.dfs.core.windows.net"
+		},
+		"dangitbugbash-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"dansynapsebugbash-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestroage.dfs.core.windows.net"
+		},
+		"dantestpara-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
 		},
 		"dantestpara-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
@@ -171,37 +248,271 @@
 			"type": "string",
 			"defaultValue": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
+		"gen21122_properties_typeProperties_accountKey": {
+			"type": "string"
+		},
+		"kusto1122_properties_typeProperties_endpoint": {
+			"type": "string",
+			"defaultValue": "https://lirsuntest.southeastasia.kusto.windows.net"
+		},
 		"kusto1122_properties_typeProperties_tenant": {
 			"type": "string",
 			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
 		"kusto1122_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "123"
+			"type": "int",
+			"defaultValue": 123
+		},
+		"kusto1122_properties_typeProperties_servicePrincipalKey": {
+			"type": "string"
 		},
 		"kusto1122_properties_typeProperties_database": {
+			"type": "int",
+			"defaultValue": 789
+		},
+		"kusto1123_properties_typeProperties_endpoint": {
 			"type": "string",
-			"defaultValue": "789"
+			"defaultValue": "https://lirsuntest.southeastasia.kusto.windows.net"
 		},
 		"kusto1123_properties_typeProperties_tenant": {
 			"type": "string",
 			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
 		"kusto1123_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "34"
+			"type": "int",
+			"defaultValue": 34
+		},
+		"kusto1123_properties_typeProperties_servicePrincipalKey": {
+			"type": "string"
 		},
 		"kusto1123_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "87654"
+			"type": "int",
+			"defaultValue": 87654
+		},
+		"ltianscusworkspace-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
 		},
 		"ltianscusworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://ltianscusgen2.dfs.core.windows.net"
 		},
-		"nyc_tlc_green_sasUri": {
-			"type": "secureString",
-			"metadata": "Secure string for 'sasUri' of 'nyc_tlc_green'"
+		"testpewsdeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
+		},
+		"workspacedeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString": {
+			"type": "string"
+		},
+		"workspacedeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://dansynapsestoragev2.dfs.core.windows.net"
+		},
+		"Credential1_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"Credential1_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "ij"
+		},
+		"Credential1_properties_typeProperties_servicePrincipalKey": {
+			"type": "object",
+			"defaultValue": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "123"
+			}
+		},
+		"Credential2_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"Credential2_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"Credential2_properties_typeProperties_servicePrincipalKey": {
+			"type": "object",
+			"defaultValue": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "name"
+			}
+		},
+		"sql script 1_properties_content_currentConnection_poolName": {
+			"type": "string"
+		},
+		"sql script 1_properties_content_currentConnection_databaseName": {
+			"type": "string"
+		},
+		"sql script 1_Copy1_properties_content_currentConnection_poolName": {
+			"type": "string"
+		},
+		"sql script 1_Copy1_properties_content_currentConnection_databaseName": {
+			"type": "string"
+		},
+		"SQL script 2_properties_content_currentConnection_poolName": {
+			"type": "string"
+		},
+		"SQL script 2_properties_content_currentConnection_databaseName": {
+			"type": "string"
+		},
+		"SQL script 3_properties_content_currentConnection_poolName": {
+			"type": "string"
+		},
+		"SQL script 3_properties_content_currentConnection_databaseName": {
+			"type": "string"
+		},
+		"Sql script1_properties_content_currentConnection_poolName": {
+			"type": "string"
+		},
+		"Sql script1_properties_content_currentConnection_databaseName": {
+			"type": "string"
+		},
+		"Charting in Synapse Notebook2_Copy1_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"Charting in Synapse Notebook2_Copy1_Copy2_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"Charting in Synapse Notebook2_Copy1_Copy3_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"Charting in Synapse Notebook_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"Charting in Synapse Notebook_Copy2_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"Charting in Synapse Notebook_Copy3_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase3_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase3_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase5_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase5_Copy2_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase5_Copy3_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase5_Copy4_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase6_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase7_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"DebugFailCase8_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCase9_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "catest"
+		},
+		"DebugFailCases4_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"Getting Started with Delta Lake_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"InputOutputTest_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"InputOutputTest_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"displayhtmlnotebook_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"displayhtmlnotebook_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"displaynotebook_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"matplotlibnotebook_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"matplotlibnotebook_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"mssparkutilsnotebook_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "smallpool"
+		},
+		"outputAnalyzer_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"outputAnalyzer_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"outputAnalyzer_Copy2_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"outputAnalyzer_Copy3_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"xiaolelTest_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"xiaolelTest1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"xiaolelTest1_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
+		},
+		"xiaolelTest1_Copy1_Copy1_properties_bigDataPool_referenceName": {
+			"type": "string",
+			"defaultValue": "origin"
 		}
 	},
 	"variables": {
@@ -239,7 +550,7 @@
 					"cancelAfter": {}
 				},
 				"annotations": [],
-				"lastPublishTime": "2021-02-24T03:28:11Z"
+				"lastPublishTime": "2021-07-22T17:04:56Z"
 			},
 			"dependsOn": [
 				"[concat(variables('workspaceId'), '/notebooks/DebugFailCase3')]"
@@ -269,36 +580,17 @@
 								"type": "SparkJobDefinitionReference"
 							}
 						}
-					},
-					{
-						"name": "Notebook1",
-						"type": "SynapseNotebook",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"notebook": {
-								"referenceName": "Charting in Synapse Notebook",
-								"type": "NotebookReference"
-							}
-						}
 					}
 				],
 				"policy": {
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:04:57Z"
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/sparkJobDefinitions/DebugCase4')]",
-				"[concat(variables('workspaceId'), '/notebooks/Charting in Synapse Notebook')]"
+				"[concat(variables('workspaceId'), '/sparkJobDefinitions/DebugCase4')]"
 			]
 		},
 		{
@@ -326,7 +618,8 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:04:56Z"
 			},
 			"dependsOn": [
 				"[concat(variables('workspaceId'), '/pipelines/Pipeline 1')]"
@@ -339,17 +632,23 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Execute Pipeline1",
-						"type": "ExecutePipeline",
+						"name": "SQL pool stored procedure1",
+						"type": "SqlPoolStoredProcedure",
 						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
 						"userProperties": [],
+						"sqlPool": {
+							"referenceName": "pool1",
+							"type": "SqlPoolReference"
+						},
 						"typeProperties": {
-							"pipeline": {
-								"referenceName": "Pipeline 3",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {}
+							"storedProcedureName": "[dbo].[Procedure]"
 						}
 					}
 				],
@@ -357,10 +656,87 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:03:37Z"
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/pipelines/Pipeline 3')]"
+				"[concat(variables('workspaceId'), '/sqlPools/pool1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Pipeline 4_copy1')]",
+			"type": "Microsoft.Synapse/workspaces/pipelines",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"activities": [
+					{
+						"name": "SQL pool stored procedure1",
+						"type": "SqlPoolStoredProcedure",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"sqlPool": {
+							"referenceName": "pool1",
+							"type": "SqlPoolReference"
+						},
+						"typeProperties": {
+							"storedProcedureName": "[dbo].[Procedure]"
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {},
+					"cancelAfter": {}
+				},
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:03:34Z"
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/sqlPools/pool1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Pipeline 4_copy2')]",
+			"type": "Microsoft.Synapse/workspaces/pipelines",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"activities": [
+					{
+						"name": "SQL pool stored procedure1",
+						"type": "SqlPoolStoredProcedure",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"sqlPool": {
+							"referenceName": "pool1",
+							"type": "SqlPoolReference"
+						},
+						"typeProperties": {
+							"storedProcedureName": "[dbo].[Procedure1]"
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {},
+					"cancelAfter": {}
+				},
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:03:36Z"
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/sqlPools/pool1')]"
 			]
 		},
 		{
@@ -370,17 +746,23 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Execute Pipeline1",
-						"type": "ExecutePipeline",
+						"name": "SQL pool stored procedure1",
+						"type": "SqlPoolStoredProcedure",
 						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
 						"userProperties": [],
+						"sqlPool": {
+							"referenceName": "pool1",
+							"type": "SqlPoolReference"
+						},
 						"typeProperties": {
-							"pipeline": {
-								"referenceName": "Pipeline 4",
-								"type": "PipelineReference"
-							},
-							"waitOnCompletion": true,
-							"parameters": {}
+							"storedProcedureName": "[dbo].[Procedure]"
 						}
 					}
 				],
@@ -388,10 +770,56 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:03:35Z"
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/pipelines/Pipeline 4')]"
+				"[concat(variables('workspaceId'), '/sqlPools/pool1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/web')]",
+			"type": "Microsoft.Synapse/workspaces/pipelines",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"activities": [
+					{
+						"name": "Web1",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": "https://code.visualstudio.com/docs/editor/workspaces",
+							"connectVia": {
+								"referenceName": "AutoResolveIntegrationRuntime",
+								"type": "IntegrationRuntimeReference"
+							},
+							"method": "GET",
+							"headers": {
+								"hearder": "1"
+							}
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {},
+					"cancelAfter": {}
+				},
+				"folder": {
+					"name": "New folder"
+				},
+				"annotations": [],
+				"lastPublishTime": "2021-07-22T17:04:55Z"
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
 			]
 		},
 		{
@@ -402,27 +830,10 @@
 				"annotations": [],
 				"type": "AzureBlobStorage",
 				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/AzureBlobStorage1124')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"description": "test",
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1124_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -441,11 +852,7 @@
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
-					}
+					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -467,7 +874,7 @@
 					"url": "[parameters('AzureDataLakeStorage1116_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1116_accountKey')]"
+						"value": "[parameters('AzureDataLakeStorage1116_properties_typeProperties_accountKey')]"
 					}
 				},
 				"connectVia": {
@@ -490,7 +897,51 @@
 					"url": "[parameters('AzureDataLakeStorage1117_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1117_accountKey')]"
+						"value": "[parameters('AzureDataLakeStorage1117_properties_typeProperties_accountKey')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureDataLakeStorage1118')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('AzureDataLakeStorage1118_properties_typeProperties_url')]",
+					"accountKey": "[parameters('AzureDataLakeStorage1118_properties_typeProperties_accountKey')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
+				"[concat(variables('workspaceId'), '/linkedServices/AzureKeyVault1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureDataLakeStorage1119')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('AzureDataLakeStorage1119_properties_typeProperties_url')]",
+					"accountKey": {
+						"type": "SecureString",
+						"value": "[parameters('AzureDataLakeStorage1119_properties_typeProperties_accountKey')]"
 					}
 				},
 				"connectVia": {
@@ -516,14 +967,17 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage112501')]",
+			"name": "[concat(parameters('workspaceName'), '/AzureMySql1')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
-				"type": "AzureBlobStorage",
+				"type": "AzureMySql",
 				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage112501_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('AzureMySql1_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -535,15 +989,17 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage112502')]",
+			"name": "[concat(parameters('workspaceName'), '/AzureSqlDatabase1')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
-				"description": "01",
 				"annotations": [],
-				"type": "AzureBlobStorage",
+				"type": "AzureSqlDatabase",
 				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage112502_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -555,92 +1011,17 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage1211')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"description": "fd",
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage1211_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage1214')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"description": "test",
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage1214_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage1217')]",
+			"name": "[concat(parameters('workspaceName'), '/AzureSynapseAnalytics1')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
-				"type": "AzureBlobStorage",
+				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage1217_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage121701')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage121701_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/BlobStorage121702')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('BlobStorage121702_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('AzureSynapseAnalytics1_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -685,7 +1066,7 @@
 					"url": "[parameters('Gen2112501_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('Gen2112501_accountKey')]"
+						"value": "[parameters('Gen2112501_properties_typeProperties_accountKey')]"
 					}
 				},
 				"connectVia": {
@@ -708,7 +1089,7 @@
 					"url": "[parameters('Gen21217_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('Gen21217_accountKey')]"
+						"value": "[parameters('Gen21217_properties_typeProperties_accountKey')]"
 					}
 				},
 				"connectVia": {
@@ -729,35 +1110,14 @@
 				"annotations": [],
 				"type": "AzureDataExplorer",
 				"typeProperties": {
-					"endpoint": "https://kustodemo.westus2.kusto.windows.net",
+					"endpoint": "[parameters('Kusto112501_properties_typeProperties_endpoint')]",
 					"tenant": "[parameters('Kusto112501_properties_typeProperties_tenant')]",
 					"servicePrincipalId": "[parameters('Kusto112501_properties_typeProperties_servicePrincipalId')]",
 					"servicePrincipalKey": {
 						"type": "SecureString",
-						"value": "[parameters('Kusto112501_servicePrincipalKey')]"
+						"value": "[parameters('Kusto112501_properties_typeProperties_servicePrincipalKey')]"
 					},
 					"database": "[parameters('Kusto112501_properties_typeProperties_database')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/MongoDbApi1125')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"description": "01",
-				"annotations": [],
-				"type": "CosmosDbMongoDbApi",
-				"typeProperties": {
-					"connectionString": "[parameters('MongoDbApi1125_connectionString')]",
-					"database": "[parameters('MongoDbApi1125_properties_typeProperties_database')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -776,11 +1136,149 @@
 				"annotations": [],
 				"type": "PowerBIWorkspace",
 				"typeProperties": {
-					"workspaceID": "28a0e6b5-f83b-47c9-aa9f-eaab6b8a2bf9",
-					"tenantID": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+					"workspaceID": "[parameters('PowerBIWorkspace1_properties_typeProperties_workspaceID')]",
+					"tenantID": "[parameters('PowerBIWorkspace1_properties_typeProperties_tenantID')]"
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dancicdtest-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('dancicdtest-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dancicdtest-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('dancicdtest-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dangitbugbash-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('dangitbugbash-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dangitbugbash-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dansynapsebugbash-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('dansynapsebugbash-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/dansynapsebugbash-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/dantestpara-WorkspaceDefaultSqlServer')]",
@@ -795,7 +1293,10 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('dantestpara-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('dantestpara-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -859,7 +1360,7 @@
 					"url": "[parameters('gen21122_properties_typeProperties_url')]",
 					"accountKey": {
 						"type": "SecureString",
-						"value": "[parameters('gen21122_accountKey')]"
+						"value": "[parameters('gen21122_properties_typeProperties_accountKey')]"
 					}
 				},
 				"connectVia": {
@@ -880,12 +1381,12 @@
 				"annotations": [],
 				"type": "AzureDataExplorer",
 				"typeProperties": {
-					"endpoint": "https://lirsuntest.southeastasia.kusto.windows.net",
+					"endpoint": "[parameters('kusto1122_properties_typeProperties_endpoint')]",
 					"tenant": "[parameters('kusto1122_properties_typeProperties_tenant')]",
 					"servicePrincipalId": "[parameters('kusto1122_properties_typeProperties_servicePrincipalId')]",
 					"servicePrincipalKey": {
 						"type": "SecureString",
-						"value": "[parameters('kusto1122_servicePrincipalKey')]"
+						"value": "[parameters('kusto1122_properties_typeProperties_servicePrincipalKey')]"
 					},
 					"database": "[parameters('kusto1122_properties_typeProperties_database')]"
 				},
@@ -906,12 +1407,12 @@
 				"annotations": [],
 				"type": "AzureDataExplorer",
 				"typeProperties": {
-					"endpoint": "https://lirsuntest.southeastasia.kusto.windows.net",
+					"endpoint": "[parameters('kusto1123_properties_typeProperties_endpoint')]",
 					"tenant": "[parameters('kusto1123_properties_typeProperties_tenant')]",
 					"servicePrincipalId": "[parameters('kusto1123_properties_typeProperties_servicePrincipalId')]",
 					"servicePrincipalKey": {
 						"type": "SecureString",
-						"value": "[parameters('kusto1123_servicePrincipalKey')]"
+						"value": "[parameters('kusto1123_properties_typeProperties_servicePrincipalKey')]"
 					},
 					"database": "[parameters('kusto1123_properties_typeProperties_database')]"
 				},
@@ -937,7 +1438,10 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('ltianscusworkspace-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('ltianscusworkspace-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -968,17 +1472,96 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/nyc_tlc_green')]",
+			"name": "[concat(parameters('workspaceName'), '/testpewsdeploy-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('testpewsdeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/testpewsdeploy-WorkspaceDefaultStorage')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
-				"type": "AzureBlobStorage",
+				"type": "AzureBlobFS",
 				"typeProperties": {
-					"sasUri": "[parameters('nyc_tlc_green_sasUri')]"
+					"url": "[parameters('testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/workspacedeploy-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": {
+						"type": "SecureString",
+						"value": "[parameters('workspacedeploy-WorkspaceDefaultSqlServer_properties_typeProperties_connectionString')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/workspacedeploy-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('workspacedeploy-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/Trigger 1')]",
@@ -986,7 +1569,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1016,7 +1599,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
+				"runtimeState": "Stopped",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1041,6 +1624,26 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('workspaceName'), '/Trigger 3')]",
+			"type": "Microsoft.Synapse/workspaces/triggers",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 15,
+						"startTime": "2021-07-13T15:06:00Z",
+						"timeZone": "UTC"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('workspaceName'), '/AutoResolveIntegrationRuntime')]",
 			"type": "Microsoft.Synapse/workspaces/integrationRuntimes",
 			"apiVersion": "2019-06-01-preview",
@@ -1055,9 +1658,15 @@
 							"timeToLive": 0
 						}
 					}
+				},
+				"managedVirtualNetwork": {
+					"type": "ManagedVirtualNetworkReference",
+					"referenceName": "default"
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/IntegrationRuntime1')]",
@@ -1080,32 +1689,54 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Dataflow1')]",
-			"type": "Microsoft.Synapse/workspaces/dataflows",
+			"name": "[concat(parameters('workspaceName'), '/IntegrationRuntime1125')]",
+			"type": "Microsoft.Synapse/workspaces/integrationRuntimes",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
-				"type": "MappingDataFlow",
+				"type": "Managed",
 				"typeProperties": {
-					"sources": [
-						{
-							"linkedService": {
-								"referenceName": "dantestpara-WorkspaceDefaultStorage",
-								"type": "LinkedServiceReference"
-							},
-							"name": "source1"
+					"computeProperties": {
+						"location": "South Central US",
+						"dataFlowProperties": {
+							"computeType": "General",
+							"coreCount": 8,
+							"timeToLive": 0
 						}
-					],
-					"sinks": [
-						{
-							"name": "sink1"
-						}
-					],
-					"transformations": [],
-					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'excel',\n\tfileSystem: 'workspace',\n\tfileName: 'Accessibility All.csv',\n\tsheetName: 'sheet1',\n\tfirstRowAsHeader: false) ~> source1\nsource1 sink(skipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tstore: 'cache',\n\tformat: 'inline',\n\tsaveOrder: 1) ~> sink1"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Credential1')]",
+			"type": "Microsoft.Synapse/workspaces/credentials",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "ServicePrincipal",
+				"typeProperties": {
+					"tenant": "[parameters('Credential1_properties_typeProperties_tenant')]",
+					"servicePrincipalId": "[parameters('Credential1_properties_typeProperties_servicePrincipalId')]",
+					"servicePrincipalKey": "[parameters('Credential1_properties_typeProperties_servicePrincipalKey')]"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('workspaceId'), '/linkedServices/dantestpara-WorkspaceDefaultStorage')]"
+				"[concat(variables('workspaceId'), '/linkedServices/AzureKeyVault1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Credential2')]",
+			"type": "Microsoft.Synapse/workspaces/credentials",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "ServicePrincipal",
+				"typeProperties": {
+					"tenant": "[parameters('Credential2_properties_typeProperties_tenant')]",
+					"servicePrincipalId": "[parameters('Credential2_properties_typeProperties_servicePrincipalId')]",
+					"servicePrincipalKey": "[parameters('Credential2_properties_typeProperties_servicePrincipalKey')]"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/linkedServices/AzureKeyVault1')]"
 			]
 		},
 		{
@@ -1119,33 +1750,1632 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Query CSV files')]",
+			"name": "[concat(parameters('workspaceName'), '/sql script 1')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "/* Covid-19 ECDC cases opendata set */\n\n/* Read a csv file */\nselect top 10 *\nfrom openrowset(\n    bulk 'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/ecdc_cases/latest/ecdc_cases.csv',\n    format = 'csv',\n    parser_version = '2.0',\n    firstrow = 2 ) as rows\n\n\n\n/* Explicitly specify schema */\nselect top 10 *\nfrom openrowset(\n        bulk 'https://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/ecdc_cases/latest/ecdc_cases.csv',\n        format = 'csv',\n        parser_version ='2.0',\n        firstrow = 2\n    ) with (\n        date_rep date 1,\n        cases int 5,\n        geo_id varchar(6) 8\n    ) as rows\n\n/* Windows style new line */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '\n'\n    )\nWITH (\n    [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n    [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n    [year] smallint,\n    [population] bigint\n) AS [r]\nWHERE\n    country_name = 'Luxembourg'\n    AND year = 2017;\n\n\n/* Unix-style new line */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '0x0a'\n    )\nWITH (\n    [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n    [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n    [year] smallint,\n    [population] bigint\n) AS [r]\nWHERE\n    country_name = 'Luxembourg'\n    AND year = 2017;\n\n\n/* Header row */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix-hdr/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        FIRSTROW = 2\n    )\n    WITH (\n        [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n        [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n        [year] smallint,\n        [population] bigint\n    ) AS [r]\nWHERE\n    country_name = 'Luxembourg'\n    AND year = 2017;\n\n\n/* Custom quote character */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix-hdr-quoted/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '0x0a',\n        FIRSTROW = 2,\n        FIELDQUOTE = '\"'\n    )\n    WITH (\n        [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n        [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n        [year] smallint,\n        [population] bigint\n    ) AS [r]\nWHERE\n    country_name = 'Luxembourg'\n    AND year = 2017;\n\n\n/* Escape characters */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix-hdr-escape/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '0x0a',\n        FIRSTROW = 2,\n        ESCAPECHAR = ''\n    )\n    WITH (\n        [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n        [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n        [year] smallint,\n        [population] bigint\n    ) AS [r]\nWHERE\n    country_name = 'Slovenia';\n\n\n/* Escape quoting characters */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix-hdr-escape-quoted/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '0x0a',\n        FIRSTROW = 2\n    )\n    WITH (\n        [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n        [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n        [year] smallint,\n        [population] bigint\n    ) AS [r]\nWHERE\n    country_name = 'Slovenia';\n\n\n/* Tab-delimited files */\nSELECT *\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population-unix-hdr-tsv/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR ='\t',\n        ROWTERMINATOR = '0x0a',\n        FIRSTROW = 2\n    )\n    WITH (\n        [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2,\n        [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2,\n        [year] smallint,\n        [population] bigint\n    ) AS [r]\nWHERE\n    country_name = 'Luxembourg'\n    AND year = 2017\n\n\n/* Return a subset of columns */\nSELECT\n    COUNT(DISTINCT country_name) AS countries\nFROM OPENROWSET(\n        BULK 'https://sqlondemandstorage.blob.core.windows.net/public-csv/population/population.csv',\n        FORMAT = 'CSV', PARSER_VERSION = '2.0',\n        FIELDTERMINATOR =',',\n        ROWTERMINATOR = '\n'\n    )\nWITH (\n    --[country_code] VARCHAR (5),\n    [country_name] VARCHAR (100) 2\n    --[year] smallint,\n    --[population] bigint\n) AS [r]\n",
+					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest' \nend ",
 					"metadata": {
 						"language": "sql"
 					},
 					"currentConnection": {
-						"poolName": "Built-in",
-						"databaseName": "master"
-					}
+						"poolName": "[parameters('sql script 1_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('sql script 1_properties_content_currentConnection_databaseName')]"
+					},
+					"resultLimit": 5000
 				},
 				"type": "SqlQuery"
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook')]",
+			"name": "[concat(parameters('workspaceName'), '/sql script 1_Copy1')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest'\nend   ",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"poolName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('sql script 1_Copy1_properties_content_currentConnection_databaseName')]"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/SQL script 2')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "fghj",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"poolName": "[parameters('SQL script 2_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('SQL script 2_properties_content_currentConnection_databaseName')]"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/SQL script 3')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "USE AdventureWorks2012;\nGO\nSELECT *\nFROM Production.Product\nORDER BY Name ASC;\n-- Alternate way.\nUSE AdventureWorks2012;\nGO\nSELECT p.*\nFROM Production.Product AS p\nORDER BY Name ASC;\nGO",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"poolName": "[parameters('SQL script 3_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('SQL script 3_properties_content_currentConnection_databaseName')]"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Sql script1')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "SQL *\nFROM spt_fallback_db  ",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"poolName": "[parameters('Sql script1_properties_content_currentConnection_poolName')]",
+						"databaseName": "[parameters('Sql script1_properties_content_currentConnection_databaseName')]"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook2_Copy1_Copy1')]",
 			"type": "Microsoft.Synapse/workspaces/notebooks",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('Charting in Synapse Notebook2_Copy1_Copy1_properties_bigDataPool_referenceName')]",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "56g",
+					"driverCores": 8,
+					"executorMemory": "56g",
+					"executorCores": 8,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
+						"name": "origin",
+						"type": "Spark",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "2.4",
+						"nodeCount": 10,
+						"cores": 8,
+						"memory": 56,
+						"extraHeader": null
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "markdown",
+						"source": [
+							"# Charting in Synapse Notebook\n",
+							"\n",
+							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
+							""
+						],
+						"attachments": null
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Matplotlib\n",
+							""
+						],
+						"attachments": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Line charts\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							" \n",
+							"x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+							"y1 = [1, 3, 5, 3, 1, 3, 5, 3, 1]\n",
+							"y2 = [2, 4, 6, 4, 2, 4, 6, 4, 2]\n",
+							"plt.plot(x, y1, label=\"line L\")\n",
+							"plt.plot(x, y2, label=\"line H\")\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"x axis\")\n",
+							"plt.ylabel(\"y axis\")\n",
+							"plt.title(\"Line Graph Example\")\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 1
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Bar chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"# Look at index 4 and 6, which demonstrate overlapping cases.\n",
+							"x1 = [1, 3, 4, 5, 6, 7, 9]\n",
+							"y1 = [4, 7, 2, 4, 7, 8, 3]\n",
+							"\n",
+							"x2 = [2, 4, 6, 8, 10]\n",
+							"y2 = [5, 6, 2, 6, 2]\n",
+							"\n",
+							"# Colors: https://matplotlib.org/api/colors_api.html\n",
+							"\n",
+							"plt.bar(x1, y1, label=\"Blue Bar\", color='b')\n",
+							"plt.bar(x2, y2, label=\"Green Bar\", color='g')\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"bar number\")\n",
+							"plt.ylabel(\"bar height\")\n",
+							"plt.title(\"Bar Chart Example\")\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Histogram\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Use numpy to generate a bunch of random data in a bell curve around 5.\n",
+							"n = 5 + np.random.randn(1000)\n",
+							"\n",
+							"m = [m for m in range(len(n))]\n",
+							"plt.bar(m, n)\n",
+							"plt.title(\"Raw Data\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, bins=20)\n",
+							"plt.title(\"Histogram\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, cumulative=True, bins=20)\n",
+							"plt.title(\"Cumulative Histogram\")\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Scatter chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"x1 = [2, 3, 4]\n",
+							"y1 = [5, 5, 5]\n",
+							"\n",
+							"x2 = [1, 2, 3, 4, 5]\n",
+							"y2 = [2, 3, 2, 3, 4]\n",
+							"y3 = [6, 8, 7, 8, 7]\n",
+							"\n",
+							"# Markers: https://matplotlib.org/api/markers_api.html\n",
+							"\n",
+							"plt.scatter(x1, y1)\n",
+							"plt.scatter(x2, y2, marker='v', color='r')\n",
+							"plt.scatter(x2, y3, marker='^', color='m')\n",
+							"plt.title('Scatter Plot Example')\n",
+							"plt.show()\n",
+							""
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Stack plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"idxes = [ 1,  2,  3,  4,  5,  6,  7,  8,  9]\n",
+							"arr1  = [23, 40, 28, 43,  8, 44, 43, 18, 17]\n",
+							"arr2  = [17, 30, 22, 14, 17, 17, 29, 22, 30]\n",
+							"arr3  = [15, 31, 18, 22, 18, 19, 13, 32, 39]\n",
+							"\n",
+							"# Adding legend for stack plots is tricky.\n",
+							"plt.plot([], [], color='r', label = 'D 1')\n",
+							"plt.plot([], [], color='g', label = 'D 2')\n",
+							"plt.plot([], [], color='b', label = 'D 3')\n",
+							"\n",
+							"plt.stackplot(idxes, arr1, arr2, arr3, colors= ['r', 'g', 'b'])\n",
+							"plt.title('Stack Plot Example')\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Pie charts\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"labels = 'S1', 'S2', 'S3'\n",
+							"sections = [56, 66, 24]\n",
+							"colors = ['c', 'g', 'y']\n",
+							"\n",
+							"plt.pie(sections, labels=labels, colors=colors,\n",
+							"        startangle=90,\n",
+							"        explode = (0, 0.1, 0),\n",
+							"        autopct = '%1.2f%%')\n",
+							"\n",
+							"plt.axis('equal') # Try commenting this out.\n",
+							"plt.title('Pie Chart Example')\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# fill_between and alpha\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"ys = 200 + np.random.randn(100)\n",
+							"x = [x for x in range(len(ys))]\n",
+							"\n",
+							"plt.plot(x, ys, '-')\n",
+							"plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)\n",
+							"\n",
+							"plt.title(\"Fills and Alpha Example\")\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Subplotting using Subplot2grid\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"def random_plots():\n",
+							"  xs = []\n",
+							"  ys = []\n",
+							"  \n",
+							"  for i in range(20):\n",
+							"    x = i\n",
+							"    y = np.random.randint(10)\n",
+							"    \n",
+							"    xs.append(x)\n",
+							"    ys.append(y)\n",
+							"  \n",
+							"  return xs, ys\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax1 = plt.subplot2grid((5, 2), (0, 0), rowspan=1, colspan=2)\n",
+							"ax2 = plt.subplot2grid((5, 2), (1, 0), rowspan=3, colspan=2)\n",
+							"ax3 = plt.subplot2grid((5, 2), (4, 0), rowspan=1, colspan=1)\n",
+							"ax4 = plt.subplot2grid((5, 2), (4, 1), rowspan=1, colspan=1)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax1.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax2.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax3.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax4.plot(x, y)\n",
+							"\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# 3D Scatter Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"from mpl_toolkits.mplot3d import axes3d\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y1 = np.random.randint(10, size=10)\n",
+							"z1 = np.random.randint(10, size=10)\n",
+							"\n",
+							"x2 = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]\n",
+							"y2 = np.random.randint(-10, 0, size=10)\n",
+							"z2 = np.random.randint(10, size=10)\n",
+							"\n",
+							"ax.scatter(x1, y1, z1, c='b', marker='o', label='blue')\n",
+							"ax.scatter(x2, y2, z2, c='g', marker='D', label='green')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Scatter Plot Example\")\n",
+							"plt.legend()\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# 3D Bar Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y = np.random.randint(10, size=10)\n",
+							"z = np.zeros(10)\n",
+							"\n",
+							"dx = np.ones(10)\n",
+							"dy = np.ones(10)\n",
+							"dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"\n",
+							"ax.bar3d(x, y, z, dx, dy, dz, color='g')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Bar Chart Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Wireframe Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x, y, z = axes3d.get_test_data()\n",
+							"\n",
+							"ax.plot_wireframe(x, y, z, rstride = 2, cstride = 2)\n",
+							"\n",
+							"plt.title(\"Wireframe Plot Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Seaborn\n",
+							"Seaborn is a library layered on top of Matplotlib that you can use."
+						],
+						"attachments": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Scatterplot with a nice regression line fit to it, all with just one call to Seaborn's regplot.\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"import seaborn as sns\n",
+							"\n",
+							"# Generate some random data\n",
+							"num_points = 20\n",
+							"# x will be 5, 6, 7... but also twiddled randomly\n",
+							"x = 5 + np.arange(num_points) + np.random.randn(num_points)\n",
+							"# y will be 10, 11, 12... but twiddled even more randomly\n",
+							"y = 10 + np.arange(num_points) + 5 * np.random.randn(num_points)\n",
+							"sns.regplot(x, y)\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Seanborn heatmap\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Make a 10 x 10 heatmap of some random data\n",
+							"side_length = 10\n",
+							"# Start with a 10 x 10 matrix with values randomized around 5\n",
+							"data = 5 + np.random.randn(side_length, side_length)\n",
+							"# The next two lines make the values larger as we get closer to (9, 9)\n",
+							"data += np.arange(side_length)\n",
+							"data += np.reshape(np.arange(side_length), (side_length, 1))\n",
+							"# Generate the heatmap\n",
+							"sns.heatmap(data)\n",
+							"plt.show()"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Bokeh\n",
+							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
+							""
+						],
+						"attachments": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"import numpy as np\n",
+							"from bokeh.plotting import figure, show\n",
+							"from bokeh.io import output_notebook\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"\n",
+							"N = 4000\n",
+							"x = np.random.random(size=N) * 100\n",
+							"y = np.random.random(size=N) * 100\n",
+							"radii = np.random.random(size=N) * 1.5\n",
+							"colors = [\"#%02x%02x%02x\" % (r, g, 150) for r, g in zip(np.floor(50+2*x).astype(int), np.floor(30+2*y).astype(int))]\n",
+							"\n",
+							"p = figure()\n",
+							"p.circle(x, y, radius=radii, fill_color=colors, fill_alpha=0.6, line_color=None)\n",
+							"show(p)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Plotting glyphs over a map using bokeh.\n",
+							"\n",
+							"from bokeh.plotting import figure, output_file\n",
+							"from bokeh.tile_providers import get_provider, Vendors\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"from bokeh.models import ColumnDataSource\n",
+							"\n",
+							"tile_provider = get_provider(Vendors.CARTODBPOSITRON)\n",
+							"\n",
+							"# range bounds supplied in web mercator coordinates\n",
+							"p = figure(x_range=(-9000000,-8000000), y_range=(4000000,5000000),\n",
+							"           x_axis_type=\"mercator\", y_axis_type=\"mercator\")\n",
+							"p.add_tile(tile_provider)\n",
+							"\n",
+							"# plot datapoints on the map\n",
+							"source = ColumnDataSource(\n",
+							"    data=dict(x=[ -8800000, -8500000 , -8800000],\n",
+							"              y=[4200000, 4500000, 4900000])\n",
+							")\n",
+							"\n",
+							"p.circle(x=\"x\", y=\"y\", size=15, fill_color=\"blue\", fill_alpha=0.8, source=source)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook2_Copy1_Copy2')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "[parameters('Charting in Synapse Notebook2_Copy1_Copy2_properties_bigDataPool_referenceName')]",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "56g",
+					"driverCores": 8,
+					"executorMemory": "56g",
+					"executorCores": 8,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
+						"name": "origin",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						}
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "markdown",
+						"source": [
+							"# Charting in Synapse Notebook\n",
+							"\n",
+							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
+							""
+						]
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Matplotlib\n",
+							""
+						]
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Line charts\n",
+							"  \n",
+							"import matplotlib.pyplot as plt\n",
+							" \n",
+							"x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+							"y1 = [1, 3, 5, 3, 1, 3, 5, 3, 1]\n",
+							"y2 = [2, 4, 6, 4, 2, 4, 6, 4, 2]\n",
+							"plt.plot(x, y1, label=\"line L\")\n",
+							"plt.plot(x, y2, label=\"line H\")\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"x axis\")  \n",
+							"plt.ylabel(\"y axis\")\n",
+							"plt.title(\"Line Graph Example\")\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": 1
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Bar chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"# Look at index 4 and 6, which demonstrate overlapping cases.\n",
+							"x1 = [1, 3, 4, 5, 6, 7, 9]\n",
+							"y1 = [4, 7, 2, 4, 7, 8, 3]\n",
+							"\n",
+							"x2 = [2, 4, 6, 8, 10]\n",
+							"y2 = [5, 6, 2, 6, 2]\n",
+							"\n",
+							"# Colors: https://matplotlib.org/api/colors_api.html\n",
+							"\n",
+							"plt.bar(x1, y1, label=\"Blue Bar\", color='b')\n",
+							"plt.bar(x2, y2, label=\"Green Bar\", color='g')\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"bar number\")\n",
+							"plt.ylabel(\"bar height\")\n",
+							"plt.title(\"Bar Chart Example\")\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Histogram\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Use numpy to generate a bunch of random data in a bell curve around 5.\n",
+							"n = 5 + np.random.randn(1000)\n",
+							"\n",
+							"m = [m for m in range(len(n))]\n",
+							"plt.bar(m, n)\n",
+							"plt.title(\"Raw Data\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, bins=20)\n",
+							"plt.title(\"Histogram\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, cumulative=True, bins=20)\n",
+							"plt.title(\"Cumulative Histogram\")\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Scatter chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"x1 = [2, 3, 4]\n",
+							"y1 = [5, 5, 5]\n",
+							"\n",
+							"x2 = [1, 2, 3, 4, 5]\n",
+							"y2 = [2, 3, 2, 3, 4]\n",
+							"y3 = [6, 8, 7, 8, 7]\n",
+							"\n",
+							"# Markers: https://matplotlib.org/api/markers_api.html\n",
+							"\n",
+							"plt.scatter(x1, y1)\n",
+							"plt.scatter(x2, y2, marker='v', color='r')\n",
+							"plt.scatter(x2, y3, marker='^', color='m')\n",
+							"plt.title('Scatter Plot Example')\n",
+							"plt.show()\n",
+							""
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Stack plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"idxes = [ 1,  2,  3,  4,  5,  6,  7,  8,  9]\n",
+							"arr1  = [23, 40, 28, 43,  8, 44, 43, 18, 17]\n",
+							"arr2  = [17, 30, 22, 14, 17, 17, 29, 22, 30]\n",
+							"arr3  = [15, 31, 18, 22, 18, 19, 13, 32, 39]\n",
+							"\n",
+							"# Adding legend for stack plots is tricky.\n",
+							"plt.plot([], [], color='r', label = 'D 1')\n",
+							"plt.plot([], [], color='g', label = 'D 2')\n",
+							"plt.plot([], [], color='b', label = 'D 3')\n",
+							"\n",
+							"plt.stackplot(idxes, arr1, arr2, arr3, colors= ['r', 'g', 'b'])\n",
+							"plt.title('Stack Plot Example')\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Pie charts\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"labels = 'S1', 'S2', 'S3'\n",
+							"sections = [56, 66, 24]\n",
+							"colors = ['c', 'g', 'y']\n",
+							"\n",
+							"plt.pie(sections, labels=labels, colors=colors,\n",
+							"        startangle=90,\n",
+							"        explode = (0, 0.1, 0),\n",
+							"        autopct = '%1.2f%%')\n",
+							"\n",
+							"plt.axis('equal') # Try commenting this out.\n",
+							"plt.title('Pie Chart Example')\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# fill_between and alpha\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"ys = 200 + np.random.randn(100)\n",
+							"x = [x for x in range(len(ys))]\n",
+							"\n",
+							"plt.plot(x, ys, '-')\n",
+							"plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)\n",
+							"\n",
+							"plt.title(\"Fills and Alpha Example\")\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Subplotting using Subplot2grid\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"def random_plots():\n",
+							"  xs = []\n",
+							"  ys = []\n",
+							"  \n",
+							"  for i in range(20):\n",
+							"    x = i\n",
+							"    y = np.random.randint(10)\n",
+							"    \n",
+							"    xs.append(x)\n",
+							"    ys.append(y)\n",
+							"  \n",
+							"  return xs, ys\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax1 = plt.subplot2grid((5, 2), (0, 0), rowspan=1, colspan=2)\n",
+							"ax2 = plt.subplot2grid((5, 2), (1, 0), rowspan=3, colspan=2)\n",
+							"ax3 = plt.subplot2grid((5, 2), (4, 0), rowspan=1, colspan=1)\n",
+							"ax4 = plt.subplot2grid((5, 2), (4, 1), rowspan=1, colspan=1)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax1.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax2.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax3.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax4.plot(x, y)\n",
+							"\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# 3D Scatter Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"from mpl_toolkits.mplot3d import axes3d\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y1 = np.random.randint(10, size=10)\n",
+							"z1 = np.random.randint(10, size=10)\n",
+							"\n",
+							"x2 = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]\n",
+							"y2 = np.random.randint(-10, 0, size=10)\n",
+							"z2 = np.random.randint(10, size=10)\n",
+							"\n",
+							"ax.scatter(x1, y1, z1, c='b', marker='o', label='blue')\n",
+							"ax.scatter(x2, y2, z2, c='g', marker='D', label='green')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Scatter Plot Example\")\n",
+							"plt.legend()\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# 3D Bar Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y = np.random.randint(10, size=10)\n",
+							"z = np.zeros(10)\n",
+							"\n",
+							"dx = np.ones(10)\n",
+							"dy = np.ones(10)\n",
+							"dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"\n",
+							"ax.bar3d(x, y, z, dx, dy, dz, color='g')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Bar Chart Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Wireframe Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x, y, z = axes3d.get_test_data()\n",
+							"\n",
+							"ax.plot_wireframe(x, y, z, rstride = 2, cstride = 2)\n",
+							"\n",
+							"plt.title(\"Wireframe Plot Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Seaborn\n",
+							"Seaborn is a library layered on top of Matplotlib that you can use."
+						]
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Scatterplot with a nice regression line fit to it, all with just one call to Seaborn's regplot.\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"import seaborn as sns\n",
+							"\n",
+							"# Generate some random data\n",
+							"num_points = 20\n",
+							"# x will be 5, 6, 7... but also twiddled randomly\n",
+							"x = 5 + np.arange(num_points) + np.random.randn(num_points)\n",
+							"# y will be 10, 11, 12... but twiddled even more randomly\n",
+							"y = 10 + np.arange(num_points) + 5 * np.random.randn(num_points)\n",
+							"sns.regplot(x, y)\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Seanborn heatmap\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Make a 10 x 10 heatmap of some random data\n",
+							"side_length = 10\n",
+							"# Start with a 10 x 10 matrix with values randomized around 5\n",
+							"data = 5 + np.random.randn(side_length, side_length)\n",
+							"# The next two lines make the values larger as we get closer to (9, 9)\n",
+							"data += np.arange(side_length)\n",
+							"data += np.reshape(np.arange(side_length), (side_length, 1))\n",
+							"# Generate the heatmap\n",
+							"sns.heatmap(data)\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"source": [
+							"## Bokeh\n",
+							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
+							""
+						]
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"import numpy as np\n",
+							"from bokeh.plotting import figure, show\n",
+							"from bokeh.io import output_notebook\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"\n",
+							"N = 4000\n",
+							"x = np.random.random(size=N) * 100\n",
+							"y = np.random.random(size=N) * 100\n",
+							"radii = np.random.random(size=N) * 1.5\n",
+							"colors = [\"#%02x%02x%02x\" % (r, g, 150) for r, g in zip(np.floor(50+2*x).astype(int), np.floor(30+2*y).astype(int))]\n",
+							"\n",
+							"p = figure()\n",
+							"p.circle(x, y, radius=radii, fill_color=colors, fill_alpha=0.6, line_color=None)\n",
+							"show(p)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"source": [
+							"# Plotting glyphs over a map using bokeh.\n",
+							"\n",
+							"from bokeh.plotting import figure, output_file\n",
+							"from bokeh.tile_providers import get_provider, Vendors\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"from bokeh.models import ColumnDataSource\n",
+							"\n",
+							"tile_provider = get_provider(Vendors.CARTODBPOSITRON)\n",
+							"\n",
+							"# range bounds supplied in web mercator coordinates\n",
+							"p = figure(x_range=(-9000000,-8000000), y_range=(4000000,5000000),\n",
+							"           x_axis_type=\"mercator\", y_axis_type=\"mercator\")\n",
+							"p.add_tile(tile_provider)\n",
+							"\n",
+							"# plot datapoints on the map\n",
+							"source = ColumnDataSource(\n",
+							"    data=dict(x=[ -8800000, -8500000 , -8800000],\n",
+							"              y=[4200000, 4500000, 4900000])\n",
+							")\n",
+							"\n",
+							"p.circle(x=\"x\", y=\"y\", size=15, fill_color=\"blue\", fill_alpha=0.8, source=source)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook2_Copy1_Copy3')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "[parameters('Charting in Synapse Notebook2_Copy1_Copy3_properties_bigDataPool_referenceName')]",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "56g",
+					"driverCores": 8,
+					"executorMemory": "56g",
+					"executorCores": 8,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
+						"name": "origin",
+						"type": "Spark",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "2.4",
+						"nodeCount": 10,
+						"cores": 8,
+						"memory": 56,
+						"automaticScaleJobs": false
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "markdown",
+						"metadata": {},
+						"source": [
+							"# Charting in Synapse Notebook\n",
+							"\n",
+							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
+							""
+						]
+					},
+					{
+						"cell_type": "markdown",
+						"metadata": {},
+						"source": [
+							"## Matplotlib\n",
+							""
+						]
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Line charts\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							" \n",
+							"x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+							"y1 = [1, 3, 5, 3, 1, 3, 5, 3, 1]\n",
+							"y2 = [2, 4, 6, 4, 2, 4, 6, 4, 2]\n",
+							"plt.plot(x, y1, label=\"line L\")\n",
+							"plt.plot(x, y2, label=\"line H\")\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"x axis\")\n",
+							"plt.ylabel(\"y axis\")\n",
+							"plt.title(\"Line Graph Example\")\n",
+							"plt.legend()\n",
+							"plt.show()\n",
+							""
+						],
+						"outputs": [],
+						"execution_count": 1
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Bar chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"# Look at index 4 and 6, which demonstrate overlapping cases.\n",
+							"x1 = [1, 3, 4, 5, 6, 7, 9]\n",
+							"y1 = [4, 7, 2, 4, 7, 8, 3]\n",
+							"\n",
+							"x2 = [2, 4, 6, 8, 10]\n",
+							"y2 = [5, 6, 2, 6, 2]\n",
+							"\n",
+							"# Colors: https://matplotlib.org/api/colors_api.html\n",
+							"\n",
+							"plt.bar(x1, y1, label=\"Blue Bar\", color='b')\n",
+							"plt.bar(x2, y2, label=\"Green Bar\", color='g')\n",
+							"plt.plot()\n",
+							"\n",
+							"plt.xlabel(\"bar number\")\n",
+							"plt.ylabel(\"bar height\")\n",
+							"plt.title(\"Bar Chart Example\")\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Histogram\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Use numpy to generate a bunch of random data in a bell curve around 5.\n",
+							"n = 5 + np.random.randn(1000)\n",
+							"\n",
+							"m = [m for m in range(len(n))]\n",
+							"plt.bar(m, n)\n",
+							"plt.title(\"Raw Data\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, bins=20)\n",
+							"plt.title(\"Histogram\")\n",
+							"plt.show()\n",
+							"\n",
+							"plt.hist(n, cumulative=True, bins=20)\n",
+							"plt.title(\"Cumulative Histogram\")\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Scatter chart\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"x1 = [2, 3, 4]\n",
+							"y1 = [5, 5, 5]\n",
+							"\n",
+							"x2 = [1, 2, 3, 4, 5]\n",
+							"y2 = [2, 3, 2, 3, 4]\n",
+							"y3 = [6, 8, 7, 8, 7]\n",
+							"\n",
+							"# Markers: https://matplotlib.org/api/markers_api.html\n",
+							"\n",
+							"plt.scatter(x1, y1)\n",
+							"plt.scatter(x2, y2, marker='v', color='r')\n",
+							"plt.scatter(x2, y3, marker='^', color='m')\n",
+							"plt.title('Scatter Plot Example')\n",
+							"plt.show()\n",
+							""
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Stack plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"idxes = [ 1,  2,  3,  4,  5,  6,  7,  8,  9]\n",
+							"arr1  = [23, 40, 28, 43,  8, 44, 43, 18, 17]\n",
+							"arr2  = [17, 30, 22, 14, 17, 17, 29, 22, 30]\n",
+							"arr3  = [15, 31, 18, 22, 18, 19, 13, 32, 39]\n",
+							"\n",
+							"# Adding legend for stack plots is tricky.\n",
+							"plt.plot([], [], color='r', label = 'D 1')\n",
+							"plt.plot([], [], color='g', label = 'D 2')\n",
+							"plt.plot([], [], color='b', label = 'D 3')\n",
+							"\n",
+							"plt.stackplot(idxes, arr1, arr2, arr3, colors= ['r', 'g', 'b'])\n",
+							"plt.title('Stack Plot Example')\n",
+							"plt.legend()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Pie charts\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"labels = 'S1', 'S2', 'S3'\n",
+							"sections = [56, 66, 24]\n",
+							"colors = ['c', 'g', 'y']\n",
+							"\n",
+							"plt.pie(sections, labels=labels, colors=colors,\n",
+							"        startangle=90,\n",
+							"        explode = (0, 0.1, 0),\n",
+							"        autopct = '%1.2f%%')\n",
+							"\n",
+							"plt.axis('equal') # Try commenting this out.\n",
+							"plt.title('Pie Chart Example')\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# fill_between and alpha\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"ys = 200 + np.random.randn(100)\n",
+							"x = [x for x in range(len(ys))]\n",
+							"\n",
+							"plt.plot(x, ys, '-')\n",
+							"plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)\n",
+							"\n",
+							"plt.title(\"Fills and Alpha Example\")\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Subplotting using Subplot2grid\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"def random_plots():\n",
+							"  xs = []\n",
+							"  ys = []\n",
+							"  \n",
+							"  for i in range(20):\n",
+							"    x = i\n",
+							"    y = np.random.randint(10)\n",
+							"    \n",
+							"    xs.append(x)\n",
+							"    ys.append(y)\n",
+							"  \n",
+							"  return xs, ys\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax1 = plt.subplot2grid((5, 2), (0, 0), rowspan=1, colspan=2)\n",
+							"ax2 = plt.subplot2grid((5, 2), (1, 0), rowspan=3, colspan=2)\n",
+							"ax3 = plt.subplot2grid((5, 2), (4, 0), rowspan=1, colspan=1)\n",
+							"ax4 = plt.subplot2grid((5, 2), (4, 1), rowspan=1, colspan=1)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax1.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax2.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax3.plot(x, y)\n",
+							"\n",
+							"x, y = random_plots()\n",
+							"ax4.plot(x, y)\n",
+							"\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# 3D Scatter Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"from mpl_toolkits.mplot3d import axes3d\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y1 = np.random.randint(10, size=10)\n",
+							"z1 = np.random.randint(10, size=10)\n",
+							"\n",
+							"x2 = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]\n",
+							"y2 = np.random.randint(-10, 0, size=10)\n",
+							"z2 = np.random.randint(10, size=10)\n",
+							"\n",
+							"ax.scatter(x1, y1, z1, c='b', marker='o', label='blue')\n",
+							"ax.scatter(x2, y2, z2, c='g', marker='D', label='green')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Scatter Plot Example\")\n",
+							"plt.legend()\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# 3D Bar Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"y = np.random.randint(10, size=10)\n",
+							"z = np.zeros(10)\n",
+							"\n",
+							"dx = np.ones(10)\n",
+							"dy = np.ones(10)\n",
+							"dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+							"\n",
+							"ax.bar3d(x, y, z, dx, dy, dz, color='g')\n",
+							"\n",
+							"ax.set_xlabel('x axis')\n",
+							"ax.set_ylabel('y axis')\n",
+							"ax.set_zlabel('z axis')\n",
+							"plt.title(\"3D Bar Chart Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Wireframe Plots\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"\n",
+							"fig = plt.figure()\n",
+							"ax = fig.add_subplot(111, projection = '3d')\n",
+							"\n",
+							"x, y, z = axes3d.get_test_data()\n",
+							"\n",
+							"ax.plot_wireframe(x, y, z, rstride = 2, cstride = 2)\n",
+							"\n",
+							"plt.title(\"Wireframe Plot Example\")\n",
+							"plt.tight_layout()\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"metadata": {},
+						"source": [
+							"## Seaborn\n",
+							"Seaborn is a library layered on top of Matplotlib that you can use."
+						]
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Scatterplot with a nice regression line fit to it, all with just one call to Seaborn's regplot.\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"import seaborn as sns\n",
+							"\n",
+							"# Generate some random data\n",
+							"num_points = 20\n",
+							"# x will be 5, 6, 7... but also twiddled randomly\n",
+							"x = 5 + np.arange(num_points) + np.random.randn(num_points)\n",
+							"# y will be 10, 11, 12... but twiddled even more randomly\n",
+							"y = 10 + np.arange(num_points) + 5 * np.random.randn(num_points)\n",
+							"sns.regplot(x, y)\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Seanborn heatmap\n",
+							"\n",
+							"import matplotlib.pyplot as plt\n",
+							"import numpy as np\n",
+							"\n",
+							"# Make a 10 x 10 heatmap of some random data\n",
+							"side_length = 10\n",
+							"# Start with a 10 x 10 matrix with values randomized around 5\n",
+							"data = 5 + np.random.randn(side_length, side_length)\n",
+							"# The next two lines make the values larger as we get closer to (9, 9)\n",
+							"data += np.arange(side_length)\n",
+							"data += np.reshape(np.arange(side_length), (side_length, 1))\n",
+							"# Generate the heatmap\n",
+							"sns.heatmap(data)\n",
+							"plt.show()"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "markdown",
+						"metadata": {},
+						"source": [
+							"## Bokeh\n",
+							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
+							""
+						]
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"import numpy as np\n",
+							"from bokeh.plotting import figure, show\n",
+							"from bokeh.io import output_notebook\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"\n",
+							"N = 4000\n",
+							"x = np.random.random(size=N) * 100\n",
+							"y = np.random.random(size=N) * 100\n",
+							"radii = np.random.random(size=N) * 1.5\n",
+							"colors = [\"#%02x%02x%02x\" % (r, g, 150) for r, g in zip(np.floor(50+2*x).astype(int), np.floor(30+2*y).astype(int))]\n",
+							"\n",
+							"p = figure()\n",
+							"p.circle(x, y, radius=radii, fill_color=colors, fill_alpha=0.6, line_color=None)\n",
+							"show(p)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"outputs": [],
+						"execution_count": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"# Plotting glyphs over a map using bokeh.\n",
+							"\n",
+							"from bokeh.plotting import figure, output_file\n",
+							"from bokeh.tile_providers import get_provider, Vendors\n",
+							"from bokeh.embed import file_html\n",
+							"from bokeh.resources import CDN\n",
+							"from bokeh.models import ColumnDataSource\n",
+							"\n",
+							"tile_provider = get_provider(Vendors.CARTODBPOSITRON)\n",
+							"\n",
+							"# range bounds supplied in web mercator coordinates\n",
+							"p = figure(x_range=(-9000000,-8000000), y_range=(4000000,5000000),\n",
+							"           x_axis_type=\"mercator\", y_axis_type=\"mercator\")\n",
+							"p.add_tile(tile_provider)\n",
+							"\n",
+							"# plot datapoints on the map\n",
+							"source = ColumnDataSource(\n",
+							"    data=dict(x=[ -8800000, -8500000 , -8800000],\n",
+							"              y=[4200000, 4500000, 4900000])\n",
+							")\n",
+							"\n",
+							"p.circle(x=\"x\", y=\"y\", size=15, fill_color=\"blue\", fill_alpha=0.8, source=source)\n",
+							"\n",
+							"# create an html document that embeds the Bokeh plot\n",
+							"html = file_html(p, CDN, \"my plot1\")\n",
+							"\n",
+							"# display this html\n",
+							"displayHTML(html)"
+						],
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook_Copy1')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "[parameters('Charting in Synapse Notebook_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -1647,495 +3877,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook_Copy1')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"bigDataPool": {
-					"referenceName": "origin",
-					"type": "BigDataPoolReference"
-				},
-				"sessionProperties": {
-					"driverMemory": "56g",
-					"driverCores": 8,
-					"executorMemory": "56g",
-					"executorCores": 8,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"language_info": {
-						"name": "python"
-					},
-					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
-						"name": "origin",
-						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
-						"auth": {
-							"type": "AAD",
-							"authResource": "https://dev.azuresynapse.net"
-						},
-						"sparkVersion": "2.4",
-						"nodeCount": 10,
-						"cores": 8,
-						"memory": 56
-					}
-				},
-				"cells": [
-					{
-						"cell_type": "markdown",
-						"source": [
-							"# Charting in Synapse Notebook\n",
-							"\n",
-							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
-							""
-						]
-					},
-					{
-						"cell_type": "markdown",
-						"source": [
-							"## Matplotlib\n",
-							""
-						]
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Line charts\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							" \n",
-							"x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
-							"y1 = [1, 3, 5, 3, 1, 3, 5, 3, 1]\n",
-							"y2 = [2, 4, 6, 4, 2, 4, 6, 4, 2]\n",
-							"plt.plot(x, y1, label=\"line L\")\n",
-							"plt.plot(x, y2, label=\"line H\")\n",
-							"plt.plot()\n",
-							"\n",
-							"plt.xlabel(\"x axis\")\n",
-							"plt.ylabel(\"y axis\")\n",
-							"plt.title(\"Line Graph Example\")\n",
-							"plt.legend()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 15
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Bar chart\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"\n",
-							"# Look at index 4 and 6, which demonstrate overlapping cases.\n",
-							"x1 = [1, 3, 4, 5, 6, 7, 9]\n",
-							"y1 = [4, 7, 2, 4, 7, 8, 3]\n",
-							"\n",
-							"x2 = [2, 4, 6, 8, 10]\n",
-							"y2 = [5, 6, 2, 6, 2]\n",
-							"\n",
-							"# Colors: https://matplotlib.org/api/colors_api.html\n",
-							"\n",
-							"plt.bar(x1, y1, label=\"Blue Bar\", color='b')\n",
-							"plt.bar(x2, y2, label=\"Green Bar\", color='g')\n",
-							"plt.plot()\n",
-							"\n",
-							"plt.xlabel(\"bar number\")\n",
-							"plt.ylabel(\"bar height\")\n",
-							"plt.title(\"Bar Chart Example\")\n",
-							"plt.legend()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 2
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Histogram\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"\n",
-							"# Use numpy to generate a bunch of random data in a bell curve around 5.\n",
-							"n = 5 + np.random.randn(1000)\n",
-							"\n",
-							"m = [m for m in range(len(n))]\n",
-							"plt.bar(m, n)\n",
-							"plt.title(\"Raw Data\")\n",
-							"plt.show()\n",
-							"\n",
-							"plt.hist(n, bins=20)\n",
-							"plt.title(\"Histogram\")\n",
-							"plt.show()\n",
-							"\n",
-							"plt.hist(n, cumulative=True, bins=20)\n",
-							"plt.title(\"Cumulative Histogram\")\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 3
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Scatter chart\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"\n",
-							"x1 = [2, 3, 4]\n",
-							"y1 = [5, 5, 5]\n",
-							"\n",
-							"x2 = [1, 2, 3, 4, 5]\n",
-							"y2 = [2, 3, 2, 3, 4]\n",
-							"y3 = [6, 8, 7, 8, 7]\n",
-							"\n",
-							"# Markers: https://matplotlib.org/api/markers_api.html\n",
-							"\n",
-							"plt.scatter(x1, y1)\n",
-							"plt.scatter(x2, y2, marker='v', color='r')\n",
-							"plt.scatter(x2, y3, marker='^', color='m')\n",
-							"plt.title('Scatter Plot Example')\n",
-							"plt.show()\n",
-							""
-						],
-						"outputs": [],
-						"execution_count": 4
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Stack plots\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"\n",
-							"idxes = [ 1,  2,  3,  4,  5,  6,  7,  8,  9]\n",
-							"arr1  = [23, 40, 28, 43,  8, 44, 43, 18, 17]\n",
-							"arr2  = [17, 30, 22, 14, 17, 17, 29, 22, 30]\n",
-							"arr3  = [15, 31, 18, 22, 18, 19, 13, 32, 39]\n",
-							"\n",
-							"# Adding legend for stack plots is tricky.\n",
-							"plt.plot([], [], color='r', label = 'D 1')\n",
-							"plt.plot([], [], color='g', label = 'D 2')\n",
-							"plt.plot([], [], color='b', label = 'D 3')\n",
-							"\n",
-							"plt.stackplot(idxes, arr1, arr2, arr3, colors= ['r', 'g', 'b'])\n",
-							"plt.title('Stack Plot Example')\n",
-							"plt.legend()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 5
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Pie charts\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"\n",
-							"labels = 'S1', 'S2', 'S3'\n",
-							"sections = [56, 66, 24]\n",
-							"colors = ['c', 'g', 'y']\n",
-							"\n",
-							"plt.pie(sections, labels=labels, colors=colors,\n",
-							"        startangle=90,\n",
-							"        explode = (0, 0.1, 0),\n",
-							"        autopct = '%1.2f%%')\n",
-							"\n",
-							"plt.axis('equal') # Try commenting this out.\n",
-							"plt.title('Pie Chart Example')\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 6
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# fill_between and alpha\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"\n",
-							"ys = 200 + np.random.randn(100)\n",
-							"x = [x for x in range(len(ys))]\n",
-							"\n",
-							"plt.plot(x, ys, '-')\n",
-							"plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)\n",
-							"\n",
-							"plt.title(\"Fills and Alpha Example\")\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 7
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Subplotting using Subplot2grid\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"\n",
-							"def random_plots():\n",
-							"  xs = []\n",
-							"  ys = []\n",
-							"  \n",
-							"  for i in range(20):\n",
-							"    x = i\n",
-							"    y = np.random.randint(10)\n",
-							"    \n",
-							"    xs.append(x)\n",
-							"    ys.append(y)\n",
-							"  \n",
-							"  return xs, ys\n",
-							"\n",
-							"fig = plt.figure()\n",
-							"ax1 = plt.subplot2grid((5, 2), (0, 0), rowspan=1, colspan=2)\n",
-							"ax2 = plt.subplot2grid((5, 2), (1, 0), rowspan=3, colspan=2)\n",
-							"ax3 = plt.subplot2grid((5, 2), (4, 0), rowspan=1, colspan=1)\n",
-							"ax4 = plt.subplot2grid((5, 2), (4, 1), rowspan=1, colspan=1)\n",
-							"\n",
-							"x, y = random_plots()\n",
-							"ax1.plot(x, y)\n",
-							"\n",
-							"x, y = random_plots()\n",
-							"ax2.plot(x, y)\n",
-							"\n",
-							"x, y = random_plots()\n",
-							"ax3.plot(x, y)\n",
-							"\n",
-							"x, y = random_plots()\n",
-							"ax4.plot(x, y)\n",
-							"\n",
-							"plt.tight_layout()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 8
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# 3D Scatter Plots\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"from mpl_toolkits.mplot3d import axes3d\n",
-							"\n",
-							"fig = plt.figure()\n",
-							"ax = fig.add_subplot(111, projection = '3d')\n",
-							"\n",
-							"x1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
-							"y1 = np.random.randint(10, size=10)\n",
-							"z1 = np.random.randint(10, size=10)\n",
-							"\n",
-							"x2 = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]\n",
-							"y2 = np.random.randint(-10, 0, size=10)\n",
-							"z2 = np.random.randint(10, size=10)\n",
-							"\n",
-							"ax.scatter(x1, y1, z1, c='b', marker='o', label='blue')\n",
-							"ax.scatter(x2, y2, z2, c='g', marker='D', label='green')\n",
-							"\n",
-							"ax.set_xlabel('x axis')\n",
-							"ax.set_ylabel('y axis')\n",
-							"ax.set_zlabel('z axis')\n",
-							"plt.title(\"3D Scatter Plot Example\")\n",
-							"plt.legend()\n",
-							"plt.tight_layout()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 9
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# 3D Bar Plots\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"\n",
-							"fig = plt.figure()\n",
-							"ax = fig.add_subplot(111, projection = '3d')\n",
-							"\n",
-							"x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
-							"y = np.random.randint(10, size=10)\n",
-							"z = np.zeros(10)\n",
-							"\n",
-							"dx = np.ones(10)\n",
-							"dy = np.ones(10)\n",
-							"dz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
-							"\n",
-							"ax.bar3d(x, y, z, dx, dy, dz, color='g')\n",
-							"\n",
-							"ax.set_xlabel('x axis')\n",
-							"ax.set_ylabel('y axis')\n",
-							"ax.set_zlabel('z axis')\n",
-							"plt.title(\"3D Bar Chart Example\")\n",
-							"plt.tight_layout()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 10
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Wireframe Plots\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"\n",
-							"fig = plt.figure()\n",
-							"ax = fig.add_subplot(111, projection = '3d')\n",
-							"\n",
-							"x, y, z = axes3d.get_test_data()\n",
-							"\n",
-							"ax.plot_wireframe(x, y, z, rstride = 2, cstride = 2)\n",
-							"\n",
-							"plt.title(\"Wireframe Plot Example\")\n",
-							"plt.tight_layout()\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 11
-					},
-					{
-						"cell_type": "markdown",
-						"source": [
-							"## Seaborn\n",
-							"Seaborn is a library layered on top of Matplotlib that you can use."
-						]
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Scatterplot with a nice regression line fit to it, all with just one call to Seaborn's regplot.\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"import seaborn as sns\n",
-							"\n",
-							"# Generate some random data\n",
-							"num_points = 20\n",
-							"# x will be 5, 6, 7... but also twiddled randomly\n",
-							"x = 5 + np.arange(num_points) + np.random.randn(num_points)\n",
-							"# y will be 10, 11, 12... but twiddled even more randomly\n",
-							"y = 10 + np.arange(num_points) + 5 * np.random.randn(num_points)\n",
-							"sns.regplot(x, y)\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 12
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Seanborn heatmap\n",
-							"\n",
-							"import matplotlib.pyplot as plt\n",
-							"import numpy as np\n",
-							"\n",
-							"# Make a 10 x 10 heatmap of some random data\n",
-							"side_length = 10\n",
-							"# Start with a 10 x 10 matrix with values randomized around 5\n",
-							"data = 5 + np.random.randn(side_length, side_length)\n",
-							"# The next two lines make the values larger as we get closer to (9, 9)\n",
-							"data += np.arange(side_length)\n",
-							"data += np.reshape(np.arange(side_length), (side_length, 1))\n",
-							"# Generate the heatmap\n",
-							"sns.heatmap(data)\n",
-							"plt.show()"
-						],
-						"outputs": [],
-						"execution_count": 13
-					},
-					{
-						"cell_type": "markdown",
-						"source": [
-							"## Bokeh\n",
-							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
-							""
-						]
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"import numpy as np\n",
-							"from bokeh.plotting import figure, show\n",
-							"from bokeh.io import output_notebook\n",
-							"from bokeh.embed import file_html\n",
-							"from bokeh.resources import CDN\n",
-							"\n",
-							"N = 4000\n",
-							"x = np.random.random(size=N) * 100\n",
-							"y = np.random.random(size=N) * 100\n",
-							"radii = np.random.random(size=N) * 1.5\n",
-							"colors = [\"#%02x%02x%02x\" % (r, g, 150) for r, g in zip(np.floor(50+2*x).astype(int), np.floor(30+2*y).astype(int))]\n",
-							"\n",
-							"p = figure()\n",
-							"p.circle(x, y, radius=radii, fill_color=colors, fill_alpha=0.6, line_color=None)\n",
-							"show(p)\n",
-							"\n",
-							"# create an html document that embeds the Bokeh plot\n",
-							"html = file_html(p, CDN, \"my plot1\")\n",
-							"\n",
-							"# display this html\n",
-							"displayHTML(html)"
-						],
-						"outputs": [],
-						"execution_count": null
-					},
-					{
-						"cell_type": "code",
-						"source": [
-							"# Plotting glyphs over a map using bokeh.\n",
-							"\n",
-							"from bokeh.plotting import figure, output_file\n",
-							"from bokeh.tile_providers import get_provider, Vendors\n",
-							"from bokeh.embed import file_html\n",
-							"from bokeh.resources import CDN\n",
-							"from bokeh.models import ColumnDataSource\n",
-							"\n",
-							"tile_provider = get_provider(Vendors.CARTODBPOSITRON)\n",
-							"\n",
-							"# range bounds supplied in web mercator coordinates\n",
-							"p = figure(x_range=(-9000000,-8000000), y_range=(4000000,5000000),\n",
-							"           x_axis_type=\"mercator\", y_axis_type=\"mercator\")\n",
-							"p.add_tile(tile_provider)\n",
-							"\n",
-							"# plot datapoints on the map\n",
-							"source = ColumnDataSource(\n",
-							"    data=dict(x=[ -8800000, -8500000 , -8800000],\n",
-							"              y=[4200000, 4500000, 4900000])\n",
-							")\n",
-							"\n",
-							"p.circle(x=\"x\", y=\"y\", size=15, fill_color=\"blue\", fill_alpha=0.8, source=source)\n",
-							"\n",
-							"# create an html document that embeds the Bokeh plot\n",
-							"html = file_html(p, CDN, \"my plot1\")\n",
-							"\n",
-							"# display this html\n",
-							"displayHTML(html)"
-						],
-						"outputs": [],
-						"execution_count": null
-					}
-				]
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook_Copy2')]",
 			"type": "Microsoft.Synapse/workspaces/notebooks",
 			"apiVersion": "2019-06-01-preview",
@@ -2143,7 +3884,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('Charting in Synapse Notebook_Copy2_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -2160,14 +3901,21 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
 					"language_info": {
 						"name": "python"
 					},
 					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
-						"name": "origin",
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/catest",
+						"name": "catest",
 						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/catest",
 						"auth": {
 							"type": "AAD",
 							"authResource": "https://dev.azuresynapse.net"
@@ -2175,7 +3923,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -2186,14 +3935,16 @@
 							"\n",
 							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"## Matplotlib\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2215,6 +3966,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 15
 					},
@@ -2244,6 +3996,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					},
@@ -2271,6 +4024,7 @@
 							"plt.title(\"Cumulative Histogram\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 3
 					},
@@ -2297,13 +4051,14 @@
 							"plt.show()\n",
 							""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 4
 					},
 					{
 						"cell_type": "code",
 						"source": [
-							"# Stack plots\n",
+							"# Stack plots \n",
 							"\n",
 							"import matplotlib.pyplot as plt\n",
 							"\n",
@@ -2322,6 +4077,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 5
 					},
@@ -2345,6 +4101,7 @@
 							"plt.title('Pie Chart Example')\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 6
 					},
@@ -2365,6 +4122,7 @@
 							"plt.title(\"Fills and Alpha Example\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 7
 					},
@@ -2410,6 +4168,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 8
 					},
@@ -2444,6 +4203,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 9
 					},
@@ -2475,6 +4235,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 10
 					},
@@ -2496,6 +4257,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 11
 					},
@@ -2504,7 +4266,8 @@
 						"source": [
 							"## Seaborn\n",
 							"Seaborn is a library layered on top of Matplotlib that you can use."
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2524,6 +4287,7 @@
 							"sns.regplot(x, y)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 12
 					},
@@ -2546,6 +4310,7 @@
 							"sns.heatmap(data)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 13
 					},
@@ -2555,7 +4320,8 @@
 							"## Bokeh\n",
 							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2582,6 +4348,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -2617,6 +4384,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -2632,7 +4400,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('Charting in Synapse Notebook_Copy3_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -2649,14 +4417,21 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
 					"language_info": {
 						"name": "python"
 					},
 					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
-						"name": "origin",
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/catest",
+						"name": "catest",
 						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/catest",
 						"auth": {
 							"type": "AAD",
 							"authResource": "https://dev.azuresynapse.net"
@@ -2664,7 +4439,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -2675,14 +4451,16 @@
 							"\n",
 							"Synapse has common used data visualization packages pre installed, such as **matplotlib**, **bokeh**, **seaborn**, **altair**, **plotly**. This notebook provides examples to do data visualization using charts in Synapse notebook. \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"## Matplotlib\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -2704,6 +4482,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 15
 					},
@@ -2733,6 +4512,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					},
@@ -2760,6 +4540,7 @@
 							"plt.title(\"Cumulative Histogram\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 3
 					},
@@ -2786,13 +4567,14 @@
 							"plt.show()\n",
 							""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 4
 					},
 					{
 						"cell_type": "code",
 						"source": [
-							"# Stack plots\n",
+							"# Stack plots \n",
 							"\n",
 							"import matplotlib.pyplot as plt\n",
 							"\n",
@@ -2811,6 +4593,7 @@
 							"plt.legend()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 5
 					},
@@ -2834,6 +4617,7 @@
 							"plt.title('Pie Chart Example')\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 6
 					},
@@ -2854,6 +4638,7 @@
 							"plt.title(\"Fills and Alpha Example\")\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 7
 					},
@@ -2899,6 +4684,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 8
 					},
@@ -2933,6 +4719,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 9
 					},
@@ -2964,6 +4751,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 10
 					},
@@ -2985,6 +4773,7 @@
 							"plt.tight_layout()\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 11
 					},
@@ -2993,7 +4782,8 @@
 						"source": [
 							"## Seaborn\n",
 							"Seaborn is a library layered on top of Matplotlib that you can use."
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -3013,6 +4803,7 @@
 							"sns.regplot(x, y)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 12
 					},
@@ -3035,6 +4826,7 @@
 							"sns.heatmap(data)\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 13
 					},
@@ -3044,7 +4836,8 @@
 							"## Bokeh\n",
 							"You can render HTML or interactive libraries, like **bokeh**, using the **displayHTML()**.\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -3071,6 +4864,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -3106,6 +4900,7 @@
 							"# display this html\n",
 							"displayHTML(html)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -3121,7 +4916,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase3_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3241,7 +5036,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase3_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3277,7 +5072,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -3304,6 +5100,7 @@
 							"df2 = df.withColumn( 'f', udf_f(\"latency\"))\n",
 							"df2.show(100)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -3320,6 +5117,7 @@
 							"var b=0\n",
 							"println(a/b)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 3
 					},
@@ -3342,6 +5140,7 @@
 							"b=0\r\n",
 							"print(a/b)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					}
@@ -3357,7 +5156,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase5_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3430,83 +5229,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/DebugFailCase5_Copy1')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"bigDataPool": {
-					"referenceName": "catest",
-					"type": "BigDataPoolReference"
-				},
-				"sessionProperties": {
-					"driverMemory": "56g",
-					"driverCores": 8,
-					"executorMemory": "56g",
-					"executorCores": 8,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"kernelspec": {
-						"name": "synapse_pyspark",
-						"display_name": "Synapse PySpark"
-					},
-					"language_info": {
-						"name": "python"
-					},
-					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/catest",
-						"name": "catest",
-						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/catest",
-						"auth": {
-							"type": "AAD",
-							"authResource": "https://dev.azuresynapse.net"
-						},
-						"sparkVersion": "2.4",
-						"nodeCount": 10,
-						"cores": 8,
-						"memory": 56
-					}
-				},
-				"cells": [
-					{
-						"cell_type": "code",
-						"source": [
-							"# file already exist\n",
-							"df = spark.createDataFrame([(1,1)],['Col_1','Col_2'])\n",
-							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\",header = True)"
-						],
-						"outputs": [],
-						"execution_count": 1
-					},
-					{
-						"cell_type": "code",
-						"metadata": {
-							"microsoft": {
-								"language": "scala"
-							}
-						},
-						"source": [
-							"%%spark\n",
-							"var df = spark.read.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")\n",
-							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")"
-						],
-						"outputs": [],
-						"execution_count": 2
-					}
-				]
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/DebugFailCase5_Copy2')]",
 			"type": "Microsoft.Synapse/workspaces/notebooks",
 			"apiVersion": "2019-06-01-preview",
@@ -3514,7 +5236,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase5_Copy2_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3550,7 +5272,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -3561,6 +5284,7 @@
 							"df = spark.createDataFrame([(1,1)],['Col_1','Col_2'])\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\",header = True)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					},
@@ -3576,6 +5300,7 @@
 							"var df = spark.read.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					}
@@ -3591,7 +5316,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase5_Copy3_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3627,7 +5352,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -3638,6 +5364,7 @@
 							"df = spark.createDataFrame([(1,1)],['Col_1','Col_2'])\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\",header = True)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					},
@@ -3653,6 +5380,7 @@
 							"var df = spark.read.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					}
@@ -3668,7 +5396,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase5_Copy4_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3704,7 +5432,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -3715,6 +5444,7 @@
 							"df = spark.createDataFrame([(1,1)],['Col_1','Col_2'])\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\",header = True)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					},
@@ -3730,6 +5460,7 @@
 							"var df = spark.read.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")\n",
 							"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					}
@@ -3745,7 +5476,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase6_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3762,9 +5493,12 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
 					"kernelspec": {
 						"name": "synapse_pyspark",
-						"display_name": "Synapse PySpark"
+						"display_name": "python"
 					},
 					"language_info": {
 						"name": "python"
@@ -3792,7 +5526,8 @@
 							"# types\n",
 							"a=1\n",
 							"b=\"test\"\n",
-							"print(a+b)"
+							"print(a+b)   \n",
+							"  "
 						],
 						"attachments": null,
 						"outputs": [],
@@ -3827,7 +5562,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('DebugFailCase7_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -3895,78 +5630,6 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/DebugFailCase7_Copy1')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"bigDataPool": {
-					"referenceName": "origin",
-					"type": "BigDataPoolReference"
-				},
-				"sessionProperties": {
-					"driverMemory": "56g",
-					"driverCores": 8,
-					"executorMemory": "56g",
-					"executorCores": 8,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"language_info": {
-						"name": "python"
-					},
-					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
-						"name": "origin",
-						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
-						"auth": {
-							"type": "AAD",
-							"authResource": "https://dev.azuresynapse.net"
-						},
-						"sparkVersion": "2.4",
-						"nodeCount": 10,
-						"cores": 8,
-						"memory": 56
-					}
-				},
-				"cells": [
-					{
-						"cell_type": "code",
-						"source": [
-							"# parameter not defined\n",
-							"df.show()"
-						],
-						"outputs": [],
-						"execution_count": 3
-					},
-					{
-						"cell_type": "code",
-						"metadata": {
-							"microsoft": {
-								"language": "scala"
-							}
-						},
-						"source": [
-							"%%spark\n",
-							"var a=100\n",
-							"println(a*b)"
-						],
-						"outputs": [],
-						"execution_count": 1
-					}
-				]
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/DebugFailCase8')]",
 			"type": "Microsoft.Synapse/workspaces/notebooks",
 			"apiVersion": "2019-06-01-preview",
@@ -3974,7 +5637,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase8_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4078,7 +5741,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "catest",
+					"referenceName": "[parameters('DebugFailCase9_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4162,7 +5825,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('DebugFailCases4_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4273,7 +5936,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('Getting Started with Delta Lake_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4392,7 +6055,7 @@
 					{
 						"cell_type": "code",
 						"source": [
-							"[[log_line.value for log_line in spark.read.text(delta_table_path + \"/_delta_log/\").collect()]"
+							"[log_line.value for log_line in spark.read.text(delta_table_path + \"/_delta_log/\").collect()]"
 						],
 						"attachments": null,
 						"outputs": [],
@@ -4448,7 +6111,7 @@
 					{
 						"cell_type": "code",
 						"source": [
-							"[[log_line.value for log_line in spark.read.text(delta_table_path + \"/_delta_log/\").collect()]"
+							"[log_line.value for log_line in spark.read.text(delta_table_path + \"/_delta_log/\").collect()]"
 						],
 						"attachments": null,
 						"outputs": [],
@@ -4775,7 +6438,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('InputOutputTest_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4862,7 +6525,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('InputOutputTest_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -4894,7 +6557,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -4904,6 +6568,7 @@
 							"val rdd = sc.textFile(\"abfss://mydefault@ltianscusgen2.dfs.core.windows.net/xiaolel/test1/part-00004-c914640a-2e14-4687-9f5e-457ba4ebff8f-c000.csv\")\n",
 							"rdd.count"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -4912,6 +6577,7 @@
 						"source": [
 							"rdd.saveAsTextFile(\"/test/output\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -4921,6 +6587,7 @@
 							"val another = spark.read.csv(\"abfss://mydefault@ltianscusgen2.dfs.core.windows.net/xiaolel/test1/part-00003-c914640a-2e14-4687-9f5e-457ba4ebff8f-c000.csv\")\n",
 							"another.count"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -4929,6 +6596,282 @@
 						"source": [
 							"another.write.csv(\"/dataframeoutput/test1\")"
 						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 1')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"hello world"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 1_Copy1')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"hello world"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 2')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"test1"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 3')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"folder": {
+					"name": "test1/test2"
+				},
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"test in folder\r\n",
+							"\r\n",
+							"edit"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 5')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							""
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 8')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
+					"language_info": {
+						"name": "python"
+					}
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"test 1"
+						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -4944,7 +6887,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('displayhtmlnotebook_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5003,7 +6946,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('displayhtmlnotebook_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5035,7 +6978,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -5045,6 +6989,7 @@
 							"from notebookutils import displayHTML\n",
 							"displayHTML(\"hello world\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 2
 					}
@@ -5060,7 +7005,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('displaynotebook_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5121,7 +7066,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('matplotlibnotebook_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5192,7 +7137,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('matplotlibnotebook_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5224,7 +7169,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -5243,6 +7189,7 @@
 							"plt.plot([1, 2, 3, 4])\n",
 							"plt.show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 1
 					}
@@ -5258,7 +7205,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('mssparkutilsnotebook_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5275,14 +7222,21 @@
 				},
 				"metadata": {
 					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "python"
+					},
 					"language_info": {
 						"name": "python"
 					},
 					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/origin",
-						"name": "origin",
+						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/smallpool",
+						"name": "smallpool",
 						"type": "Spark",
-						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/origin",
+						"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/smallpool",
 						"auth": {
 							"type": "AAD",
 							"authResource": "https://dev.azuresynapse.net"
@@ -5361,7 +7315,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('outputAnalyzer_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5622,7 +7576,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('outputAnalyzer_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5654,7 +7608,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -5663,13 +7618,15 @@
 						"source": [
 							"## 0. Set the output location\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"//please replace the tagName in the path below for further analysis.\\nval baseOutputPath = \\\"abfs://runresultstorage@tpcdsperfresults.dfs.core.windows.net/ayushifilescan1/sf_1000/\\\"\\nval sparkConfPath = baseOutputPath + \\\"confJson\\\"\\nval queryMetricsPath = baseOutputPath + \\\"query-metrics/\\\"\\nval sparkEventsPath = baseOutputPath + \\\"spark-events/\\\"\\nval systemMetricsSummary = baseOutputPath + \\\"/summary/system-metrics-summary/\\\"\","
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -5681,6 +7638,7 @@
 							"val sparkEventsPath = baseOutputPath + \"spark-events/\"\n",
 							"val systemMetricsSummary = baseOutputPath + \"/summary/system-metrics-summary/\""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5689,13 +7647,15 @@
 						"source": [
 							"## 1. Spark Configurations\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkConf = spark.read.json(sparkConfPath)\\nsparkConf.select(\"spark.`spark.driver.cores`\", \"hadoop.`dfs.heartbeat.interval`\" ).show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5704,7 +7664,8 @@
 						"source": [
 							"## 2. queryMetrics: Get Query execution times\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -5733,6 +7694,7 @@
 							"    queryMetrics.show(5)\n",
 							"    query.createOrReplaceTempView(\"query\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5742,6 +7704,7 @@
 							"%sql\n",
 							"SELECT queryId, min(executionTimeMs), max(executionTimeMs) from query group by 1 order by 1"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5750,13 +7713,15 @@
 						"source": [
 							"## 3.0 Spark Events \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkEvents = spark.read.option(\"basePath\", sparkEventsPath).json(s\"${sparkEventsPath}/*/**\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5765,7 +7730,8 @@
 						"source": [
 							"## 3.1 Spark Events: Task details\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -5838,6 +7804,7 @@
 							"    ).as(\"t\").join(query.as(\"q\"), query(\"queryId\") === taskEvents(\"queryId\") &&  query(\"startTime\") < taskEvents(\"startTime\") && query(\"endTime\") > taskEvents(\"finishTime\")).select(\"t.*\", \"q.runId\").as[Task]\n",
 							"task.createOrReplaceTempView(\"task\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5851,6 +7818,7 @@
 							"(select queryId, runId, count(1) as successfulTasks from task where killed = \"false\" and failed = \"false\" group by 1,2 order by 1,2)\n",
 							"select tt.queryId, tt.runId, totalTasks-successfulTasks as failedTasks, successfulTasks from totalTasks tt,successfulTasks st where st.queryId = tt.queryId and st.runId = tt.runId"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -5869,7 +7837,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('outputAnalyzer_Copy2_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -5901,7 +7869,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -5910,13 +7879,15 @@
 						"source": [
 							"## 0. Set the output location\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"//please replace the tagName in the path below for further analysis.\\nval baseOutputPath = \\\"abfs://runresultstorage@tpcdsperfresults.dfs.core.windows.net/ayushifilescan1/sf_1000/\\\"\\nval sparkConfPath = baseOutputPath + \\\"confJson\\\"\\nval queryMetricsPath = baseOutputPath + \\\"query-metrics/\\\"\\nval sparkEventsPath = baseOutputPath + \\\"spark-events/\\\"\\nval systemMetricsSummary = baseOutputPath + \\\"/summary/system-metrics-summary/\\\"\","
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -5928,6 +7899,7 @@
 							"val sparkEventsPath = baseOutputPath + \"spark-events/\"\n",
 							"val systemMetricsSummary = baseOutputPath + \"/summary/system-metrics-summary/\""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5936,13 +7908,15 @@
 						"source": [
 							"## 1. Spark Configurations\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkConf = spark.read.json(sparkConfPath)\\nsparkConf.select(\"spark.`spark.driver.cores`\", \"hadoop.`dfs.heartbeat.interval`\" ).show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5951,7 +7925,8 @@
 						"source": [
 							"## 2. queryMetrics: Get Query execution times\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -5980,6 +7955,7 @@
 							"    queryMetrics.show(5)\n",
 							"    query.createOrReplaceTempView(\"query\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5989,6 +7965,7 @@
 							"%sql\n",
 							"SELECT queryId, min(executionTimeMs), max(executionTimeMs) from query group by 1 order by 1"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -5997,13 +7974,15 @@
 						"source": [
 							"## 3.0 Spark Events \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkEvents = spark.read.option(\"basePath\", sparkEventsPath).json(s\"${sparkEventsPath}/*/**\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6012,7 +7991,8 @@
 						"source": [
 							"## 3.1 Spark Events: Task details\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -6085,6 +8065,7 @@
 							"    ).as(\"t\").join(query.as(\"q\"), query(\"queryId\") === taskEvents(\"queryId\") &&  query(\"startTime\") < taskEvents(\"startTime\") && query(\"endTime\") > taskEvents(\"finishTime\")).select(\"t.*\", \"q.runId\").as[Task]\n",
 							"task.createOrReplaceTempView(\"task\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6098,6 +8079,7 @@
 							"(select queryId, runId, count(1) as successfulTasks from task where killed = \"false\" and failed = \"false\" group by 1,2 order by 1,2)\n",
 							"select tt.queryId, tt.runId, totalTasks-successfulTasks as failedTasks, successfulTasks from totalTasks tt,successfulTasks st where st.queryId = tt.queryId and st.runId = tt.runId"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -6116,7 +8098,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('outputAnalyzer_Copy3_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -6148,7 +8130,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -6157,13 +8140,15 @@
 						"source": [
 							"## 0. Set the output location\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "markdown",
 						"source": [
 							"//please replace the tagName in the path below for further analysis.\\nval baseOutputPath = \\\"abfs://runresultstorage@tpcdsperfresults.dfs.core.windows.net/ayushifilescan1/sf_1000/\\\"\\nval sparkConfPath = baseOutputPath + \\\"confJson\\\"\\nval queryMetricsPath = baseOutputPath + \\\"query-metrics/\\\"\\nval sparkEventsPath = baseOutputPath + \\\"spark-events/\\\"\\nval systemMetricsSummary = baseOutputPath + \\\"/summary/system-metrics-summary/\\\"\","
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -6175,6 +8160,7 @@
 							"val sparkEventsPath = baseOutputPath + \"spark-events/\"\n",
 							"val systemMetricsSummary = baseOutputPath + \"/summary/system-metrics-summary/\""
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6183,13 +8169,15 @@
 						"source": [
 							"## 1. Spark Configurations\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkConf = spark.read.json(sparkConfPath)\\nsparkConf.select(\"spark.`spark.driver.cores`\", \"hadoop.`dfs.heartbeat.interval`\" ).show()"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6198,7 +8186,8 @@
 						"source": [
 							"## 2. queryMetrics: Get Query execution times\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -6227,6 +8216,7 @@
 							"    queryMetrics.show(5)\n",
 							"    query.createOrReplaceTempView(\"query\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6236,6 +8226,7 @@
 							"%sql\n",
 							"SELECT queryId, min(executionTimeMs), max(executionTimeMs) from query group by 1 order by 1"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6244,13 +8235,15 @@
 						"source": [
 							"## 3.0 Spark Events \n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
 						"source": [
 							"val sparkEvents = spark.read.option(\"basePath\", sparkEventsPath).json(s\"${sparkEventsPath}/*/**\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6259,7 +8252,8 @@
 						"source": [
 							"## 3.1 Spark Events: Task details\n",
 							""
-						]
+						],
+						"attachments": null
 					},
 					{
 						"cell_type": "code",
@@ -6332,6 +8326,7 @@
 							"    ).as(\"t\").join(query.as(\"q\"), query(\"queryId\") === taskEvents(\"queryId\") &&  query(\"startTime\") < taskEvents(\"startTime\") && query(\"endTime\") > taskEvents(\"finishTime\")).select(\"t.*\", \"q.runId\").as[Task]\n",
 							"task.createOrReplaceTempView(\"task\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6345,6 +8340,7 @@
 							"(select queryId, runId, count(1) as successfulTasks from task where killed = \"false\" and failed = \"false\" group by 1,2 order by 1,2)\n",
 							"select tt.queryId, tt.runId, totalTasks-successfulTasks as failedTasks, successfulTasks from totalTasks tt,successfulTasks st where st.queryId = tt.queryId and st.runId = tt.runId"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -6360,7 +8356,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('xiaolelTest_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -6607,7 +8603,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('xiaolelTest1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -6717,7 +8713,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('xiaolelTest1_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -6749,7 +8745,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -6758,6 +8755,7 @@
 						"source": [
 							"sys.env.toList.foreach(println)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6766,6 +8764,7 @@
 						"source": [
 							"spark.conf.getAll.foreach(println)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 3
 					},
@@ -6778,6 +8777,7 @@
 							"    println(\"\" + elem.getKey() + \" \\t\" + elem.getValue())\n",
 							"})"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 4
 					},
@@ -6790,6 +8790,7 @@
 							"data.show\n",
 							"log.info(\"test log in driver\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 15
 					},
@@ -6803,6 +8804,7 @@
 							"data.show\n",
 							"data.write.format(\"delta\").save(deltaTablePath)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 16
 					}
@@ -6821,7 +8823,7 @@
 				"nbformat": 4,
 				"nbformat_minor": 2,
 				"bigDataPool": {
-					"referenceName": "origin",
+					"referenceName": "[parameters('xiaolelTest1_Copy1_Copy1_properties_bigDataPool_referenceName')]",
 					"type": "BigDataPoolReference"
 				},
 				"sessionProperties": {
@@ -6853,7 +8855,8 @@
 						"sparkVersion": "2.4",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"extraHeader": null
 					}
 				},
 				"cells": [
@@ -6862,6 +8865,7 @@
 						"source": [
 							"sys.env.toList.foreach(println)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					},
@@ -6870,6 +8874,7 @@
 						"source": [
 							"spark.conf.getAll.foreach(println)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 3
 					},
@@ -6882,6 +8887,7 @@
 							"    println(\"\" + elem.getKey() + \" \\t\" + elem.getValue())\n",
 							"})"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 4
 					},
@@ -6894,6 +8900,7 @@
 							"data.show\n",
 							"log.info(\"test log in driver\")"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 15
 					},
@@ -6907,45 +8914,11 @@
 							"data.show\n",
 							"data.write.format(\"delta\").save(deltaTablePath)"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": 16
 					}
 				]
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/05121622_Scala')]",
-			"type": "Microsoft.Synapse/workspaces/sparkJobDefinitions",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"targetBigDataPool": {
-					"referenceName": "origin",
-					"type": "BigDataPoolReference"
-				},
-				"requiredSparkVersion": "2.4",
-				"language": "scala",
-				"jobProperties": {
-					"name": "05121622_Scala",
-					"file": "abfss://sparkjob@hozhaogen2.dfs.core.windows.net/synapse/workspaces/bigdataqa1105ws/batchjobs/0303_lanjun_scala_upload/wordcount.jar",
-					"className": "WordCount",
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "1",
-						"spark.dynamicAllocation.maxExecutors": "1"
-					},
-					"args": [
-						"abfss://sparkjob@hozhaogen2.dfs.core.windows.net/scala/wordcount/shakespeare.txt",
-						"abfss://sparkjob@hozhaogen2.dfs.core.windows.net/scala/wordcount/result"
-					],
-					"jars": [],
-					"files": [],
-					"driverMemory": "28g",
-					"driverCores": 4,
-					"executorMemory": "28g",
-					"executorCores": 4,
-					"numExecutors": 1
-				}
 			},
 			"dependsOn": []
 		},
@@ -7314,6 +9287,69 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/pool1')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"collation": "SQL_Latin1_General_CP1_CI_AS",
+				"maxSizeBytes": 263882790666240,
+				"restorePointInTime": "0001-01-01T00:00:00",
+				"annotations": []
+			},
+			"dependsOn": [],
+			"location": "westus"
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/pool2')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"collation": "SQL_Latin1_General_CP1_CI_AS",
+				"maxSizeBytes": 263882790666240,
+				"restorePointInTime": "0001-01-01T00:00:00",
+				"annotations": []
+			},
+			"dependsOn": [],
+			"location": "westus"
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/default')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sql--testpewsdeploy')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"privateLinkResourceId": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/testpewsdeploy",
+				"groupId": "sql",
+				"fqdns": [
+					"testpewsdeploy.6a389ab6-cdf0-41a2-9514-e76d76b45065.sql.azuresynapse.net"
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sqlOnDemand--testpewsdeploy')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"privateLinkResourceId": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/testpewsdeploy",
+				"groupId": "sqlOnDemand",
+				"fqdns": [
+					"testpewsdeploy-ondemand.6a389ab6-cdf0-41a2-9514-e76d76b45065.sql.azuresynapse.net"
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
 		}
 	]
 }
