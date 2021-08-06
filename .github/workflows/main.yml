@@ -25,7 +25,7 @@ jobs:
           TargetWorkspaceName: 'github-1'
           TemplateFile: './TemplateForWorkspace.json'
           ParametersFile: './TemplateParametersForWorkspace.json'
-          OverrideArmParameters: './Overrides.json'
+          OverrideArmParameters: './Overrides.yaml'
           environment: 'Azure Public'
           resourceGroup: 'actionbugbash'
           clientId: ${{ secrets.CLIENTID }}
