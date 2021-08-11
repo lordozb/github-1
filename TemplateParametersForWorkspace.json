@@ -53,7 +53,7 @@
 		"MongoDbApi1125_connectionString": {
 			"value": ""
 		},
-		"dantestpara-WorkspaceDefaultSqlServer_connectionString": {
+		"fidosynapsedev-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
 		"gen21122_accountKey": {
@@ -110,7 +110,7 @@
 		"MongoDbApi1125_properties_typeProperties_database": {
 			"value": "yuwwang-mongo-db1"
 		},
-		"dantestpara-WorkspaceDefaultStorage_properties_typeProperties_url": {
+		"fidosynapsedev-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
 		},
 		"gen11123_properties_typeProperties_dataLakeStoreUri": {
