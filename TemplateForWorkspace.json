@@ -3658,16 +3658,6 @@
 				"[concat(variables('workspaceId'), '/linkedServices/fidosynapsedev-WorkspaceDefaultStorage')]",
 				"[concat(variables('workspaceId'), '/datasets/red_synapse_db')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
-			"type": "Microsoft.Synapse/workspaces",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"type": "SystemAssigned",
-				"typeProperties": {}
-			},
-			"dependsOn": []
 		},		
 		{
 			"name": "[concat(parameters('workspaceName'), '/dim_master_recon_application')]",
