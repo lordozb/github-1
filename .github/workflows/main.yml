@@ -35,3 +35,4 @@ jobs:
           activeDirectoryEndpointUrl: 'https://login.microsoftonline.com/'
           resourceManagerEndpointUrl: 'https://management.azure.com/'
           DeleteArtifactsNotInTemplate: 'false'
+          managedIdentity: true
