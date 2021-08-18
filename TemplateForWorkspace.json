@@ -5,27 +5,15 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "bigdataqa0602ws-devops"
+			"defaultValue": "icm219064758"
 		},
-		"AzureBlobStorage1_connectionString": {
+		"icm219064758-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+			"metadata": "Secure string for 'connectionString' of 'icm219064758-WorkspaceDefaultSqlServer'"
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
-		},
-		"bigdataqa0602ws-devops-WorkspaceDefaultSqlServer_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'bigdataqa0602ws-devops-WorkspaceDefaultSqlServer'"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
+		"icm219064758-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://hozhao0924gen2.dfs.core.windows.net"
-		},
-		"bigdataqa0602ws-devops-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://hozhaodevopsgen2.dfs.core.windows.net"
+			"defaultValue": "https://venkatpadlsgen2.dfs.core.windows.net"
 		}
 	},
 	"variables": {
@@ -33,88 +21,7 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('workspaceName'), '/Parquet1')]",
-			"type": "Microsoft.Synapse/workspaces/datasets",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureDataLakeStorage1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Parquet",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobFSLocation",
-						"folderPath": "testholiday.parquet",
-						"fileSystem": "hozhao"
-					},
-					"compressionCodec": "snappy"
-				},
-				"schema": []
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/linkedServices/AzureDataLakeStorage1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/AzureDataLakeStorage1')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
-					}
-				},
-				"connectVia": {
-					"referenceName": "AutoResolveIntegrationRuntime",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/PowerBIWorkspaceTest')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "PowerBIWorkspace",
-				"typeProperties": {
-					"workspaceID": "28a0e6b5-f83b-47c9-aa9f-eaab6b8a2bf9",
-					"tenantID": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/bigdataqa0602ws-devops-WorkspaceDefaultSqlServer')]",
+			"name": "[concat(parameters('workspaceName'), '/icm219064758-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -126,7 +33,7 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('bigdataqa0602ws-devops-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": "[parameters('icm219064758-WorkspaceDefaultSqlServer_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -138,14 +45,14 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/bigdataqa0602ws-devops-WorkspaceDefaultStorage')]",
+			"name": "[concat(parameters('workspaceName'), '/icm219064758-WorkspaceDefaultStorage')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('bigdataqa0602ws-devops-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					"url": "[parameters('icm219064758-WorkspaceDefaultStorage_properties_typeProperties_url')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -171,9 +78,15 @@
 							"timeToLive": 0
 						}
 					}
+				},
+				"managedVirtualNetwork": {
+					"type": "ManagedVirtualNetworkReference",
+					"referenceName": "default"
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
@@ -186,32 +99,49 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('workspaceName'), '/default')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sql--icm219064758')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"privateLinkResourceId": "/subscriptions/be3e6d5c-f54f-474d-ae7e-128a5af5a691/resourceGroups/BCDR_Test01/providers/Microsoft.Synapse/workspaces/icm219064758",
+				"groupId": "sql",
+				"fqdns": [
+					"icm219064758.f1c9d064-d775-4daf-8d21-4db1df1f2008.sql.azuresynapse.net"
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sqlOnDemand--icm219064758')]",
+			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"privateLinkResourceId": "/subscriptions/be3e6d5c-f54f-474d-ae7e-128a5af5a691/resourceGroups/BCDR_Test01/providers/Microsoft.Synapse/workspaces/icm219064758",
+				"groupId": "sqlOnDemand",
+				"fqdns": [
+					"icm219064758-ondemand.f1c9d064-d775-4daf-8d21-4db1df1f2008.sql.azuresynapse.net"
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('workspaceName'), '/SQL script 1')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "/**/\n--create table\nCREATE TABLE [dbo].[TABLE2]\n(\n    Id INT NOT NULL,\n    created_time DATETIME NOT NULL\n)\n--add msg column\nALTER TABLE [dbo].[TABLE2]\n    ADD msg varchar(255)\n\n--insert some test data\nDECLARE @i int = 1;\nDECLARE @alphabet varchar(36) = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'\nWHILE @i <= 500\nBegin\nDECLARE @stamp datetime = CURRENT_TIMESTAMP;\nDECLARE @msg varchar(36)=\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1);\nINSERT INTO [dbo].[TABLE2] VALUES(@i,@stamp,@msg);\nSET @i+=1;\nEND\n\n--select\nSELECT * FROM TABLE2 ORDER BY [TABLE2].[Id] \nSELECT Id,msg FROM TABLE2 WHERE Id=10 OR Id=20\nSELECT * FROM TABLE2 WHERE Id>=200 ORDER BY Id\nSELECT * FROM TABLE2 WHERE Id>=10 AND Id<240 ORDER BY Id\n",
-					"metadata": {
-						"language": "sql"
-					},
-					"currentConnection": {
-						"poolName": "sql",
-						"databaseName": "sql"
-					},
-					"resultLimit": 5000
-				},
-				"type": "SqlQuery"
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/SQL script 2')]",
-			"type": "Microsoft.Synapse/workspaces/sqlscripts",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"content": {
-					"query": "select one ",
+					"query": "select 1\ngo\n",
 					"metadata": {
 						"language": "sql"
 					},
@@ -222,66 +152,6 @@
 					"resultLimit": 5000
 				},
 				"type": "SqlQuery"
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/Notebook zhao0607')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"bigDataPool": {
-					"referenceName": "sparkpool",
-					"type": "BigDataPoolReference"
-				},
-				"sessionProperties": {
-					"driverMemory": "56g",
-					"driverCores": 8,
-					"executorMemory": "56g",
-					"executorCores": 8,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"synapse_widget": {
-						"version": "0.1",
-						"state": {}
-					},
-					"kernelspec": {
-						"name": "synapse_pyspark",
-						"display_name": "python"
-					},
-					"language_info": {
-						"name": "python"
-					},
-					"a365ComputeOptions": {
-						"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/bigdataqa/providers/Microsoft.Synapse/workspaces/bigdataqa0602ws/bigDataPools/sparkpool",
-						"name": "sparkpool",
-						"auth": {
-							"type": "AAD",
-							"authResource": "https://dev.azuresynapse.net"
-						}
-					},
-					"sessionKeepAliveTimeout": 30
-				},
-				"cells": [
-					{
-						"cell_type": "code",
-						"metadata": {},
-						"source": [
-							"print(1+1)"
-						],
-						"outputs": [],
-						"execution_count": null
-					}
-				]
 			},
 			"dependsOn": []
 		}
