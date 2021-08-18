@@ -3,16 +3,19 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "accessibilitytestep"
+			"value": "bcdrtest01"
 		},
-		"accessibilitytestep-WorkspaceDefaultSqlServer_connectionString": {
+		"venkatp28-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+		"venkatp29-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
-		"accessibilitytestep-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://accessibilitytest.dfs.core.windows.net"
+		"venkatp28-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://venkatpadlsgen2.dfs.core.windows.net"
+		},
+		"venkatp29-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://venkatpadlsgen2.dfs.core.windows.net"
 		}
 	}
 }
