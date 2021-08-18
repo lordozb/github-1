@@ -3,19 +3,25 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "bcdrtest01"
+			"value": "bigdata0427ws"
 		},
-		"venkatp28-WorkspaceDefaultSqlServer_connectionString": {
+		"bigdata0427ws-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"venkatp29-WorkspaceDefaultSqlServer_connectionString": {
+		"bigdata0925ws-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"venkatp28-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://venkatpadlsgen2.dfs.core.windows.net"
+		"bigdataqa0602ws-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
-		"venkatp29-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://venkatpadlsgen2.dfs.core.windows.net"
+		"bigdata0427ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://hozhaoswtgen2.dfs.core.windows.net"
+		},
+		"bigdata0925ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://hozhao0924gen2.dfs.core.windows.net"
+		},
+		"bigdataqa0602ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://hozhao0924gen2.dfs.core.windows.net"
 		}
 	}
 }
