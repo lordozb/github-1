@@ -3,13 +3,19 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "icm219064758"
+			"value": "icm248337586"
 		},
-		"icm219064758-WorkspaceDefaultSqlServer_connectionString": {
+		"icm248337586-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"icm219064758-WorkspaceDefaultStorage_properties_typeProperties_url": {
+		"icm248337586-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://venkatpadlsgen2.dfs.core.windows.net"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://bcdrtestvenkatp1.vault.azure.net/"
+		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"value": "AzureBlobStorage1-connectionString"
 		}
 	}
 }
