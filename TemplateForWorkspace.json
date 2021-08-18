@@ -5,15 +5,23 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "icm219064758"
+			"defaultValue": "icm248337586"
 		},
-		"icm219064758-WorkspaceDefaultSqlServer_connectionString": {
+		"icm248337586-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'icm219064758-WorkspaceDefaultSqlServer'"
+			"metadata": "Secure string for 'connectionString' of 'icm248337586-WorkspaceDefaultSqlServer'"
 		},
-		"icm219064758-WorkspaceDefaultStorage_properties_typeProperties_url": {
+		"icm248337586-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://venkatpadlsgen2.dfs.core.windows.net"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://bcdrtestvenkatp1.vault.azure.net/"
+		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "AzureBlobStorage1-connectionString"
 		}
 	},
 	"variables": {
@@ -21,7 +29,7 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('workspaceName'), '/icm219064758-WorkspaceDefaultSqlServer')]",
+			"name": "[concat(parameters('workspaceName'), '/icm248337586-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -33,7 +41,7 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('icm219064758-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": "[parameters('icm248337586-WorkspaceDefaultSqlServer_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -45,14 +53,14 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/icm219064758-WorkspaceDefaultStorage')]",
+			"name": "[concat(parameters('workspaceName'), '/icm248337586-WorkspaceDefaultStorage')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('icm219064758-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					"url": "[parameters('icm248337586-WorkspaceDefaultStorage_properties_typeProperties_url')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -78,15 +86,9 @@
 							"timeToLive": 0
 						}
 					}
-				},
-				"managedVirtualNetwork": {
-					"type": "ManagedVirtualNetworkReference",
-					"referenceName": "default"
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
@@ -99,49 +101,12 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/default')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sql--icm219064758')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"privateLinkResourceId": "/subscriptions/be3e6d5c-f54f-474d-ae7e-128a5af5a691/resourceGroups/BCDR_Test01/providers/Microsoft.Synapse/workspaces/icm219064758",
-				"groupId": "sql",
-				"fqdns": [
-					"icm219064758.f1c9d064-d775-4daf-8d21-4db1df1f2008.sql.azuresynapse.net"
-				]
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/default/synapse-ws-sqlOnDemand--icm219064758')]",
-			"type": "Microsoft.Synapse/workspaces/managedVirtualNetworks/managedPrivateEndpoints",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"privateLinkResourceId": "/subscriptions/be3e6d5c-f54f-474d-ae7e-128a5af5a691/resourceGroups/BCDR_Test01/providers/Microsoft.Synapse/workspaces/icm219064758",
-				"groupId": "sqlOnDemand",
-				"fqdns": [
-					"icm219064758-ondemand.f1c9d064-d775-4daf-8d21-4db1df1f2008.sql.azuresynapse.net"
-				]
-			},
-			"dependsOn": [
-				"[concat(variables('workspaceId'), '/managedVirtualNetworks/default')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/SQL script 1')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "select 1\ngo\n",
+					"query": "select 'hello1'",
 					"metadata": {
 						"language": "sql"
 					},
@@ -154,6 +119,66 @@
 				"type": "SqlQuery"
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/SQL script 2')]",
+			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"content": {
+					"query": "select 'hello2'",
+					"metadata": {
+						"language": "sql"
+					},
+					"currentConnection": {
+						"poolName": "Built-in",
+						"databaseName": "master"
+					},
+					"resultLimit": 5000
+				},
+				"type": "SqlQuery"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureKeyVault1')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureKeyVault",
+				"typeProperties": {
+					"baseUrl": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureBlobStorage1')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": {
+						"type": "AzureKeyVaultSecret",
+						"store": {
+							"referenceName": "AzureKeyVault1",
+							"type": "LinkedServiceReference"
+						},
+						"secretName": "[parameters('AzureBlobStorage1_properties_typeProperties_connectionString_secretName')]"
+					}
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]",
+				"[concat(variables('workspaceId'), '/linkedServices/AzureKeyVault1')]"
+			]
 		}
 	]
 }
