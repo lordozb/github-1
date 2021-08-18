@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "bigdata0427ws"
+			"value": "bigdataqa0602ws"
 		},
 		"bigdata0427ws-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
