@@ -3,67 +3,16 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "globalbrewdatsynapsegbdev"
+			"value": "accessibilitytestep"
 		},
-		"LS_ADLS_SourceForecast_accountKey": {
+		"accessibilitytestep-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"LS_ASQL_GrowthFactorAnalysis_connectionString": {
-			"value": ""
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
 		},
-		"LS_ASQL_RosettaSource_connectionString": {
-			"value": ""
-		},
-		"LS_ASYN_GrowthFactorAnalysis_connectionString": {
-			"value": ""
-		},
-		"LS_ASYN_RosettaTarget_connectionString": {
-			"value": ""
-		},
-		"LS_MySQL_BrandHarmonization_connectionString": {
-			"value": ""
-		},
-		"globalbrewdatsynapsegbdev-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
-		"LS_ADLS_SourceForecast_properties_typeProperties_url": {
-			"value": "https://brewdatadlstestgbpoc.dfs.core.windows.net"
-		},
-		"globalbrewdatsynapsegbdev-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://abigrowthfactoradls.dfs.core.windows.net"
-		},
-		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_DBName": {
-			"value": "GrowthFactorDev"
-		},
-		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_BATCH_NAME": {
-			"value": "batch_BrandMasterFeedback"
-		},
-		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_CURRENT_USER": {
-			"value": "synapseuser"
-		},
-		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_DBName": {
-			"value": "GrowthFactorDev"
-		},
-		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_BATCH_NAME": {
-			"value": "batch_BrandHarmonization"
-		},
-		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_CURRENT_USER": {
-			"value": "synapseuser"
-		},
-		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_EmailId": {
-			"value": "\"Sashank.Datla-ext@ab-inbev.com\""
-		},
-		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_URL": {
-			"value": "https://prod-45.westeurope.logic.azure.com:443/"
-		},
-		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_StorageAccountName": {
-			"value": "abigrowthfactoradls"
-		},
-		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_IsTraining": {
-			"value": "False"
-		},
-		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_databaseName": {
-			"value": "growthfactordev"
+		"accessibilitytestep-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://accessibilitytest.dfs.core.windows.net"
 		}
 	}
 }
