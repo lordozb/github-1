@@ -5,7 +5,7 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "bigdata0427ws"
+			"defaultValue": "bigdataqa0602ws"
 		},
 		"bigdata0427ws-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
@@ -36,29 +36,6 @@
 		"workspaceId": "[concat('Microsoft.Synapse/workspaces/', parameters('workspaceName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('workspaceName'), '/sql')]",
-			"type": "Microsoft.Synapse/workspaces/sqlPools",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/PowerBIWorkspaceTestCICD')]",
-			"type": "Microsoft.Synapse/workspaces/linkedServices",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"annotations": [],
-				"type": "PowerBIWorkspace",
-				"typeProperties": {
-					"workspaceID": "28a0e6b5-f83b-47c9-aa9f-eaab6b8a2bf9",
-					"tenantID": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-				}
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('workspaceName'), '/bigdata0427ws-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
@@ -228,7 +205,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/sql')]",
+			"name": "[concat(parameters('workspaceName'), '/test')]",
 			"type": "Microsoft.Synapse/workspaces/sqlPools",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -238,7 +215,7 @@
 				"annotations": []
 			},
 			"dependsOn": [],
-			"location": "centralus"
+			"location": "westeurope"
 		}
 	]
 }
