@@ -3,154 +3,67 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "dantestpara"
+			"value": "globalbrewdatsynapsegbdev"
 		},
-		"AzureBlobStorage1_connectionString": {
+		"LS_ADLS_SourceForecast_accountKey": {
 			"value": ""
 		},
-		"AzureBlobStorage1124_connectionString": {
+		"LS_ASQL_GrowthFactorAnalysis_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"LS_ASQL_RosettaSource_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1116_accountKey": {
+		"LS_ASYN_GrowthFactorAnalysis_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1117_accountKey": {
+		"LS_ASYN_RosettaTarget_connectionString": {
 			"value": ""
 		},
-		"BlobStorage112501_connectionString": {
+		"LS_MySQL_BrandHarmonization_connectionString": {
 			"value": ""
 		},
-		"BlobStorage112502_connectionString": {
+		"globalbrewdatsynapsegbdev-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"BlobStorage1211_connectionString": {
-			"value": ""
+		"LS_ADLS_SourceForecast_properties_typeProperties_url": {
+			"value": "https://brewdatadlstestgbpoc.dfs.core.windows.net"
 		},
-		"BlobStorage1214_connectionString": {
-			"value": ""
+		"globalbrewdatsynapsegbdev-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://abigrowthfactoradls.dfs.core.windows.net"
 		},
-		"BlobStorage1217_connectionString": {
-			"value": ""
+		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_DBName": {
+			"value": "GrowthFactorDev"
 		},
-		"BlobStorage121701_connectionString": {
-			"value": ""
+		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_BATCH_NAME": {
+			"value": "batch_BrandMasterFeedback"
 		},
-		"BlobStorage121702_connectionString": {
-			"value": ""
+		"TRIGGER_BH_ActionLog_properties_PL_ActionLog_Feedback_parameters_CURRENT_USER": {
+			"value": "synapseuser"
 		},
-		"Gen2112501_accountKey": {
-			"value": ""
+		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_DBName": {
+			"value": "GrowthFactorDev"
 		},
-		"Gen21217_accountKey": {
-			"value": ""
+		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_BATCH_NAME": {
+			"value": "batch_BrandHarmonization"
 		},
-		"Kusto112501_servicePrincipalKey": {
-			"value": ""
+		"TRIGGER_BrandHarmonization_properties_PL_Master_BrandHarmonization_parameters_CURRENT_USER": {
+			"value": "synapseuser"
 		},
-		"MongoDbApi1125_connectionString": {
-			"value": ""
+		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_EmailId": {
+			"value": "\"Sashank.Datla-ext@ab-inbev.com\""
 		},
-		"fidosynapsedev-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
+		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_URL": {
+			"value": "https://prod-45.westeurope.logic.azure.com:443/"
 		},
-		"gen21122_accountKey": {
-			"value": ""
+		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_StorageAccountName": {
+			"value": "abigrowthfactoradls"
 		},
-		"kusto1122_servicePrincipalKey": {
-			"value": ""
+		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_IsTraining": {
+			"value": "False"
 		},
-		"kusto1123_servicePrincipalKey": {
-			"value": ""
-		},
-		"ltianscusworkspace-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://hozhaotestgen2.dfs.core.windows.net"
-		},
-		"AzureDataLakeStorage1116_properties_typeProperties_url": {
-			"value": "https://storagegen2qingtest.dfs.core.windows.net"
-		},
-		"AzureDataLakeStorage1117_properties_typeProperties_url": {
-			"value": "https://storagegen2qingtest.dfs.core.windows.net"
-		},
-		"AzureKeyVault1_properties_typeProperties_baseUrl": {
-			"value": "https://a365-e2e.vault.azure.net/"
-		},
-		"Gen1112501_properties_typeProperties_dataLakeStoreUri": {
-			"value": "https://storagegen1qingtest.azuredatalakestore.net/webhdfs/v1"
-		},
-		"Gen1112501_properties_typeProperties_tenant": {
-			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"Gen1112501_properties_typeProperties_subscriptionId": {
-			"value": "051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3"
-		},
-		"Gen1112501_properties_typeProperties_resourceGroupName": {
-			"value": "bigdataqa"
-		},
-		"Gen2112501_properties_typeProperties_url": {
-			"value": "https://storagegen2qingtest.dfs.core.windows.net"
-		},
-		"Gen21217_properties_typeProperties_url": {
-			"value": "https://storagegen2qingtest.dfs.core.windows.net"
-		},
-		"Kusto112501_properties_typeProperties_tenant": {
-			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"Kusto112501_properties_typeProperties_servicePrincipalId": {
-			"value": "ac3a0e33-1db1-48ba-9b19-24ce0330ff5c"
-		},
-		"Kusto112501_properties_typeProperties_database": {
-			"value": "cdndemo"
-		},
-		"MongoDbApi1125_properties_typeProperties_database": {
-			"value": "yuwwang-mongo-db1"
-		},
-		"fidosynapsedev-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
-		},
-		"gen11123_properties_typeProperties_dataLakeStoreUri": {
-			"value": "https://ruxuadlsgen1.azuredatalakestore.net/webhdfs/v1"
-		},
-		"gen11123_properties_typeProperties_tenant": {
-			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"gen11123_properties_typeProperties_subscriptionId": {
-			"value": "051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3"
-		},
-		"gen11123_properties_typeProperties_resourceGroupName": {
-			"value": "ruxurg"
-		},
-		"gen21122_properties_typeProperties_url": {
-			"value": "https://storagegen2qingtest.dfs.core.windows.net"
-		},
-		"kusto1122_properties_typeProperties_tenant": {
-			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"kusto1122_properties_typeProperties_servicePrincipalId": {
-			"value": "123"
-		},
-		"kusto1122_properties_typeProperties_database": {
-			"value": "789"
-		},
-		"kusto1123_properties_typeProperties_tenant": {
-			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"kusto1123_properties_typeProperties_servicePrincipalId": {
-			"value": "34"
-		},
-		"kusto1123_properties_typeProperties_database": {
-			"value": "87654"
-		},
-		"ltianscusworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://ltianscusgen2.dfs.core.windows.net"
-		},
-		"nyc_tlc_green_sasUri": {
-			"value": ""
+		"TRIGGER_GrowthFactor_Incremental_properties_PL_DataLoadGrowthFactorAnalysisIncremental_parameters_databaseName": {
+			"value": "growthfactordev"
 		}
 	}
 }
