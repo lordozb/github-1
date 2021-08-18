@@ -5,23 +5,31 @@
 		"workspaceName": {
 			"type": "string",
 			"metadata": "Workspace name",
-			"defaultValue": "bcdrtest01"
+			"defaultValue": "bigdata0427ws"
 		},
-		"venkatp28-WorkspaceDefaultSqlServer_connectionString": {
+		"bigdata0427ws-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'venkatp28-WorkspaceDefaultSqlServer'"
+			"metadata": "Secure string for 'connectionString' of 'bigdata0427ws-WorkspaceDefaultSqlServer'"
 		},
-		"venkatp29-WorkspaceDefaultSqlServer_connectionString": {
+		"bigdata0925ws-WorkspaceDefaultSqlServer_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'venkatp29-WorkspaceDefaultSqlServer'"
+			"metadata": "Secure string for 'connectionString' of 'bigdata0925ws-WorkspaceDefaultSqlServer'"
 		},
-		"venkatp28-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://venkatpadlsgen2.dfs.core.windows.net"
+		"bigdataqa0602ws-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'bigdataqa0602ws-WorkspaceDefaultSqlServer'"
 		},
-		"venkatp29-WorkspaceDefaultStorage_properties_typeProperties_url": {
+		"bigdata0427ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://venkatpadlsgen2.dfs.core.windows.net"
+			"defaultValue": "https://hozhaoswtgen2.dfs.core.windows.net"
+		},
+		"bigdata0925ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://hozhao0924gen2.dfs.core.windows.net"
+		},
+		"bigdataqa0602ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://hozhao0924gen2.dfs.core.windows.net"
 		}
 	},
 	"variables": {
@@ -29,7 +37,30 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('workspaceName'), '/venkatp28-WorkspaceDefaultSqlServer')]",
+			"name": "[concat(parameters('workspaceName'), '/sql')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": []
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/PowerBIWorkspaceTestCICD')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "PowerBIWorkspace",
+				"typeProperties": {
+					"workspaceID": "28a0e6b5-f83b-47c9-aa9f-eaab6b8a2bf9",
+					"tenantID": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/bigdata0427ws-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -41,7 +72,7 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('venkatp28-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": "[parameters('bigdata0427ws-WorkspaceDefaultSqlServer_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -53,14 +84,14 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/venkatp28-WorkspaceDefaultStorage')]",
+			"name": "[concat(parameters('workspaceName'), '/bigdata0427ws-WorkspaceDefaultStorage')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('venkatp28-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					"url": "[parameters('bigdata0427ws-WorkspaceDefaultStorage_properties_typeProperties_url')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -72,7 +103,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/venkatp29-WorkspaceDefaultSqlServer')]",
+			"name": "[concat(parameters('workspaceName'), '/bigdata0925ws-WorkspaceDefaultSqlServer')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -84,7 +115,7 @@
 				"annotations": [],
 				"type": "AzureSqlDW",
 				"typeProperties": {
-					"connectionString": "[parameters('venkatp29-WorkspaceDefaultSqlServer_connectionString')]"
+					"connectionString": "[parameters('bigdata0925ws-WorkspaceDefaultSqlServer_connectionString')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -96,14 +127,57 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/venkatp29-WorkspaceDefaultStorage')]",
+			"name": "[concat(parameters('workspaceName'), '/bigdata0925ws-WorkspaceDefaultStorage')]",
 			"type": "Microsoft.Synapse/workspaces/linkedServices",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobFS",
 				"typeProperties": {
-					"url": "[parameters('venkatp29-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+					"url": "[parameters('bigdata0925ws-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/bigdataqa0602ws-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": "[parameters('bigdataqa0602ws-WorkspaceDefaultSqlServer_connectionString')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/bigdataqa0602ws-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('bigdataqa0602ws-WorkspaceDefaultStorage_properties_typeProperties_url')]"
 				},
 				"connectVia": {
 					"referenceName": "AutoResolveIntegrationRuntime",
@@ -134,110 +208,37 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
-			"type": "Microsoft.Synapse/workspaces/credentials",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"type": "ManagedIdentity",
-				"typeProperties": {}
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('workspaceName'), '/SQL script 1')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "create PROCEDURE [dbo].[p1] AS\nBEGIN\n    select [name] from [sys].[tables] order by [name] \nEND\ngo",
+					"query": "/**/\n--create table\nCREATE TABLE [dbo].[TestTable333]\n(\n    Id INT NOT NULL,\n    created_time DATETIME NOT NULL\n)\n--add msg column\nALTER TABLE [dbo].[TestTable333]\n    ADD msg varchar(255)\n\n--insert some test data\nDECLARE @i int = 1;\nDECLARE @alphabet varchar(36) = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'\nWHILE @i <= 500\nBegin\nDECLARE @stamp datetime = CURRENT_TIMESTAMP;\nDECLARE @msg varchar(36)=\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1) +\nsubstring(@alphabet, convert(int, rand()*36), 1);\nINSERT INTO [dbo].[TestTable333] VALUES(@i,@stamp,@msg);\nSET @i+=1;\nEND\n\n--select\nSELECT * FROM TestTable333 ORDER BY [TestTable333].[Id] \nSELECT Id,msg FROM TestTable333 WHERE Id=10 OR Id=20\nSELECT * FROM TestTable333 WHERE Id>=200 ORDER BY Id\nSELECT * FROM TestTable333 WHERE Id>=10 AND Id<240 ORDER BY Id\n",
 					"metadata": {
 						"language": "sql"
 					},
 					"currentConnection": {
-						"poolName": "Built-in",
-						"databaseName": "master"
-					}
+						"poolName": "sql",
+						"databaseName": "sql"
+					},
+					"resultLimit": 5000
 				},
 				"type": "SqlQuery"
 			},
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/SQL script 2')]",
-			"type": "Microsoft.Synapse/workspaces/sqlscripts",
+			"name": "[concat(parameters('workspaceName'), '/sql')]",
+			"type": "Microsoft.Synapse/workspaces/sqlPools",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
-				"content": {
-					"query": "select 2\n",
-					"metadata": {
-						"language": "sql"
-					},
-					"currentConnection": {
-						"name": "master",
-						"type": "SqlOnDemand"
-					}
-				},
-				"type": "SqlQuery"
+				"collation": "SQL_Latin1_General_CP1_CI_AS",
+				"maxSizeBytes": 263882790666240,
+				"restorePointInTime": "0001-01-01T00:00:00",
+				"annotations": []
 			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/nb1')]",
-			"type": "Microsoft.Synapse/workspaces/notebooks",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"nbformat": 4,
-				"nbformat_minor": 2,
-				"bigDataPool": {
-					"referenceName": "pool1",
-					"type": "BigDataPoolReference"
-				},
-				"sessionProperties": {
-					"driverMemory": "28g",
-					"driverCores": 4,
-					"executorMemory": "28g",
-					"executorCores": 4,
-					"numExecutors": 2,
-					"conf": {
-						"spark.dynamicAllocation.enabled": "false",
-						"spark.dynamicAllocation.minExecutors": "2",
-						"spark.dynamicAllocation.maxExecutors": "2"
-					}
-				},
-				"metadata": {
-					"saveOutput": true,
-					"language_info": {
-						"name": "python"
-					},
-					"a365ComputeOptions": {
-						"id": "/subscriptions/be3e6d5c-f54f-474d-ae7e-128a5af5a691/resourceGroups/venkatptest(7-_9)2OO/providers/Microsoft.Synapse/workspaces/venkatp29/bigDataPools/pool1",
-						"name": "pool1",
-						"type": "Spark",
-						"endpoint": "https://venkatp29.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/pool1",
-						"auth": {
-							"type": "AAD",
-							"authResource": "https://dev.azuresynapse.net"
-						},
-						"sparkVersion": "2.4",
-						"nodeCount": 10,
-						"cores": 4,
-						"memory": 28,
-						"extraHeader": null
-					}
-				},
-				"cells": [
-					{
-						"cell_type": "code",
-						"source": [
-							"1+1+1+1+872938"
-						],
-						"attachments": null,
-						"outputs": [],
-						"execution_count": 1
-					}
-				]
-			},
-			"dependsOn": []
+			"dependsOn": [],
+			"location": "centralus"
 		}
 	]
 }
