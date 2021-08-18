@@ -3,25 +3,22 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"workspaceName": {
-			"value": "bigdataqa0602ws"
+			"value": "bigdataqa0602ws-devops"
 		},
-		"bigdata0427ws-WorkspaceDefaultSqlServer_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
-		"bigdata0925ws-WorkspaceDefaultSqlServer_connectionString": {
+		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
-		"bigdataqa0602ws-WorkspaceDefaultSqlServer_connectionString": {
+		"bigdataqa0602ws-devops-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
-		"bigdata0427ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://hozhaoswtgen2.dfs.core.windows.net"
-		},
-		"bigdata0925ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://hozhao0924gen2.dfs.core.windows.net"
 		},
-		"bigdataqa0602ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://hozhao0924gen2.dfs.core.windows.net"
+		"bigdataqa0602ws-devops-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://hozhaodevopsgen2.dfs.core.windows.net"
 		}
 	}
 }
